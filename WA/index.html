@@ -1,0 +1,1011 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.3/dist/jquery.min.js"></script>
+
+    <title id="page-title">RCJA – Regional Calendar</title>
+
+    <style>
+        body {
+            background-image: url("../homeimage.jpg");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+            min-height: 100vh;
+            margin: 0;
+            padding: 20px;
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+        }
+
+        .header-bar {
+            max-width: 950px;
+            margin: 0 auto 20px;
+            padding: 15px 25px;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+
+        .header-bar h1 {
+            margin: 0;
+            font-size: 1.5rem;
+            color: #192f59;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        #rcja-state-interactive {
+            max-width: 950px;
+            margin: 0 auto;
+            border-radius: 12px;
+            overflow: hidden;
+            background: #ffffff;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            border: 1px solid #eee;
+        }
+
+        .map-container {
+            display: flex;
+            flex-wrap: wrap;
+            min-height: 500px;
+        }
+
+        .region-sidebar {
+            flex: 1;
+            min-width: 260px;
+            background: #192f59;
+            padding: 30px 20px;
+            color: white;
+        }
+
+        .region-btn {
+            display: block;
+            width: 100%;
+            padding: 15px;
+            margin: 12px 0;
+            border: 2px solid rgba(157, 189, 56, 0.3);
+            border-radius: 8px;
+            background: transparent;
+            color: white;
+            text-align: left;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-weight: 600;
+            font-size: 0.95rem;
+        }
+
+        .region-btn:hover {
+            background: rgba(157, 189, 56, 0.1);
+            border-color: #9dbd38;
+        }
+
+        .region-btn.active {
+            background: #9dbd38;
+            color: #192f59;
+            border-color: #9dbd38;
+            box-shadow: 0 4px 12px rgba(157, 189, 56, 0.3);
+        }
+
+        .event-display {
+            flex: 2;
+            min-width: 320px;
+            padding: 45px;
+            background: #fafafa;
+        }
+
+        .event-card h2 {
+            color: #192f59;
+            margin-top: 0;
+            font-size: 1.8rem;
+            margin-bottom: 25px;
+        }
+
+        .event-item {
+            margin-bottom: 20px;
+            padding: 15px 20px;
+            background: white;
+            border-radius: 8px;
+            border-left: 6px solid #9dbd38;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+            cursor: pointer;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .event-item:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+        }
+
+        .event-item.state-highlight {
+            background: #192f59 !important;
+            color: white !important;
+            border-left-color: #9dbd38;
+        }
+
+        .event-item.state-highlight .date-tag {
+            color: #9dbd38;
+            background: rgba(255,255,255,0.1);
+        }
+
+        .event-item.state-highlight .event-title {
+            color: white;
+        }
+
+        .date-tag {
+            font-weight: 800;
+            color: #192f59;
+            background: rgba(157, 189, 56, 0.1);
+            padding: 2px 8px;
+            border-radius: 4px;
+            font-size: 0.85rem;
+            margin-bottom: 5px;
+            display: inline-block;
+        }
+
+        .event-title {
+            font-size: 1.15rem;
+            font-weight: 700;
+            color: #333;
+            display: block;
+            margin-top: 5px;
+        }
+
+        .event-desc {
+            color: #666;
+            font-size: 0.9rem;
+            margin-top: 8px;
+        }
+
+        .event-item.state-highlight .event-desc {
+            color: rgba(255,255,255,0.9);
+        }
+
+        .event-link {
+            margin-top: 10px;
+            display: inline-block;
+            color: #192f59;
+            font-weight: 600;
+            text-decoration: none;
+        }
+
+        .event-link:hover {
+            text-decoration: underline;
+        }
+
+        .event-item.state-highlight .event-link {
+            color: #9dbd38;
+        }
+
+        .placeholder-text {
+            text-align: center;
+            color: #192f59;
+            padding-top: 100px;
+            opacity: 0.8;
+        }
+
+        .robot-icon {
+            font-size: 50px;
+            margin-bottom: 20px;
+        }
+
+        .no-events {
+            color: #666;
+            font-style: italic;
+            text-align: center;
+            padding: 40px 20px;
+        }
+
+        .loading-spinner {
+            text-align: center;
+            padding: 60px 20px;
+            color: #192f59;
+        }
+
+        .footer-info {
+            text-align: center;
+            padding: 15px;
+            color: #999;
+            font-size: 0.85rem;
+            border-top: 1px solid #eee;
+            background: white;
+        }
+
+        @keyframes slideIn {
+            from {
+                opacity: 0;
+                transform: translateX(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        .event-card {
+            animation: slideIn 0.4s ease-out;
+        }
+
+        @keyframes spin {
+            to { transform: rotate(360deg); }
+        }
+
+        .spinner {
+            display: inline-block;
+            width: 40px;
+            height: 40px;
+            border: 4px solid rgba(157, 189, 56, 0.2);
+            border-top-color: #9dbd38;
+            border-radius: 50%;
+            animation: spin 0.8s linear infinite;
+        }
+
+        .state-about {
+            max-width: 950px;
+            margin: 0 auto 20px;
+            padding: 15px 25px;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            display: none;
+        }
+
+        .state-about h2 {
+            margin-bottom: 12px;
+            color: #192f59;
+        }
+
+        .state-about p {
+            line-height: 1.6;
+            margin-bottom: 12px;
+        }
+
+        .state-about a {
+            text-decoration: none;
+            color: #192f59;
+        }
+
+        .state-about a:hover {
+            text-decoration: underline;
+        }
+
+        /* Modal Styles */
+        .event-modal {
+            display: none;
+            position: fixed;
+            z-index: 10000;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0,0,0,0.6);
+            overflow: auto;
+        }
+
+        .modal-content {
+            background-color: #fefefe;
+            margin: 5% auto;
+            padding: 30px;
+            border-radius: 8px;
+            width: 90%;
+            max-width: 700px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+            position: relative;
+        }
+
+        .modal-close {
+            color: #aaa;
+            float: right;
+            font-size: 32px;
+            font-weight: bold;
+            line-height: 20px;
+            cursor: pointer;
+            transition: color 0.2s;
+        }
+
+        .modal-close:hover,
+        .modal-close:focus {
+            color: #192f59;
+        }
+
+        .modal-title {
+            color: #192f59;
+            margin-top: 0;
+            margin-bottom: 20px;
+            font-size: 1.5rem;
+            clear: both;
+        }
+
+        .modal-body {
+            line-height: 1.8;
+        }
+
+        .modal-detail {
+            margin-bottom: 15px;
+            padding-bottom: 15px;
+            border-bottom: 1px solid #eee;
+        }
+
+        .modal-detail:last-child {
+            border-bottom: none;
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }
+
+        .modal-detail strong {
+            color: #192f59;
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        .division-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-top: 4px;
+        }
+
+        .division-tag {
+            display: inline-block;
+            padding: 4px 12px;
+            background: rgba(157, 189, 56, 0.15);
+            color: #192f59;
+            border: 1px solid rgba(157, 189, 56, 0.5);
+            border-radius: 999px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            line-height: 1.4;
+        }
+
+        .detail-muted {
+            color: #999;
+            font-style: italic;
+        }
+
+        @media (max-width: 768px) {
+            .header-bar {
+                padding: 15px;
+            }
+            
+            .header-bar h1 {
+                font-size: 1.2rem;
+            }
+
+            .region-sidebar {
+                padding: 20px 15px;
+            }
+
+            .event-display {
+                padding: 25px 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header-bar">
+        <h1 id="page-header">
+            <img src="../favicon-32x32.png" alt="RCJA" style="vertical-align: middle;">
+            <span>Loading...</span>
+        </h1>
+    </div>
+
+    <div id="state-about" class="state-about">
+        <!-- State-specific about content will be injected here by JS if available -->
+    </div>
+
+    <div id="rcja-state-interactive">
+        <div class="map-container">
+            <div class="region-sidebar">
+                <h3 id="sidebar-title" style="margin-top:0; color: #9dbd38; letter-spacing: 1px;">LOADING...</h3>
+                <div id="region-buttons">
+                    <!-- Region buttons will be inserted here -->
+                </div>
+            </div>
+
+            <div class="event-display" id="display-area">
+                <div class="loading-spinner">
+                    <div class="spinner"></div>
+                    <p>Loading events…</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-info" id="last-updated">
+            <span>⏱️ –</span>
+            <span style="margin-left: 15px;">·</span>
+            <a href="../sync/" style="margin-left: 15px; color: #999; text-decoration: none;">Sync to Calendar</a>
+        </div>
+    </div>
+
+    <!-- Event Details Modal -->
+    <div id="eventModal" class="event-modal">
+        <div class="modal-content">
+            <span class="modal-close">&times;</span>
+            <h2 id="modalTitle" class="modal-title"></h2>
+            <div id="modalBody" class="modal-body"></div>
+        </div>
+    </div>
+
+<script>
+    // State-specific about section content (shown only for the matching state).
+    // IMPORTANT: All HTML here is developer-controlled static content — not user-generated data.
+    // Do not interpolate any external/user-provided values into these strings.
+    const stateAboutContent = {
+        'QLD': {
+            html: `
+                <h2>About RoboCup Junior Queensland</h2>
+                <p>
+                    RoboCup Junior Queensland (RCJQ) is the Queensland chapter of RoboCup Junior Australia,
+                    supporting students through robotics competitions across the state.
+                    Visit the <a href="https://www.robocupjunior.org.au/challenge-regions/qld/" target="_blank" rel="noopener">official QLD page</a> to learn more.
+                </p>
+                <p>
+                    📧 Contact: <a href="mailto:qld@robocupjunior.org.au">qld@robocupjunior.org.au</a>
+                </p>
+                <p>
+                    🔗 Follow us:
+                    <a href="https://www.facebook.com/RoboCupJuniorQld/" target="_blank" rel="noopener">Facebook</a> ·
+                    <a href="https://www.instagram.com/robocupjunior.qld/" target="_blank" rel="noopener">Instagram</a> ·
+                    <a href="https://www.linkedin.com/company/robocupjuniorqld" target="_blank" rel="noopener">LinkedIn</a>
+                </p>
+            `
+        },
+        'NSW': {
+            html: `
+                <h2>About RoboCup Junior New South Wales</h2>
+                <p>
+                    RoboCup Junior New South Wales (RCJNSW) is the New South Wales chapter of RoboCup Junior Australia,
+                    supporting students through robotics competitions across the state.
+                    Visit the <a href="https://www.robocupjunior.org.au/challenge-regions/nsw/" target="_blank" rel="noopener">official NSW page</a> to learn more.
+                </p>
+                <p>
+                    📧 Contact: <a href="mailto:nsw@robocupjunior.org.au">nsw@robocupjunior.org.au</a>
+                </p>
+                <p>
+                    🔗 Follow us:
+                    <a href="https://www.facebook.com/RoboCupJuniorNSW" target="_blank" rel="noopener">Facebook</a> ·
+                    <a href="https://www.twitter.com/rcjnsw" target="_blank" rel="noopener">Twitter</a> ·
+                    <a href="https://linkedin.com/company/rcjnsw" target="_blank" rel="noopener">LinkedIn</a>
+                </p>
+            `
+        },
+        'VIC': {
+            html: `
+                <h2>About RoboCup Junior Victoria</h2>
+                <p>
+                    RoboCup Junior Victoria (RCJV) is the Victorian chapter of RoboCup Junior Australia,
+                    supporting students through robotics competitions across the state.
+                    Visit the <a href="https://www.robocupjunior.org.au/challenge-regions/vic/" target="_blank" rel="noopener">official VIC page</a> to learn more.
+                </p>
+                <p>
+                    📧 Contact: <a href="https://www.robocupjunior.org.au/contact-us/" target="_blank" rel="noopener">RCJA contact form</a>
+                </p>
+                <p>
+                    🔗 Follow us:
+                    <a href="https://www.facebook.com/robocupjunioraustralia/" target="_blank" rel="noopener">Facebook</a> ·
+                    <a href="https://www.instagram.com/robocupjunioraustralia/" target="_blank" rel="noopener">Instagram</a> ·
+                    <a href="https://www.linkedin.com/company/rcja" target="_blank" rel="noopener">LinkedIn</a>
+                </p>
+            `
+        },
+        'SA': {
+            html: `
+                <h2>About RoboCup Junior South Australia</h2>
+                <p>
+                    RoboCup Junior South Australia (RCJSA) is the South Australian chapter of RoboCup Junior Australia,
+                    supporting students through robotics competitions across the state.
+                    Visit the <a href="https://www.robocupjunior.org.au/challenge-regions/sa/" target="_blank" rel="noopener">official SA page</a> to learn more.
+                </p>
+                <p>
+                    📧 Contact: <a href="https://www.robocupjunior.org.au/contact-us/" target="_blank" rel="noopener">RCJA contact form</a>
+                </p>
+                <p>
+                    🔗 Follow us:
+                    <a href="https://www.facebook.com/robocupjunioraustralia/" target="_blank" rel="noopener">Facebook</a> ·
+                    <a href="https://www.instagram.com/robocupjunioraustralia/" target="_blank" rel="noopener">Instagram</a> ·
+                    <a href="https://www.linkedin.com/company/rcja" target="_blank" rel="noopener">LinkedIn</a>
+                </p>
+            `
+        },
+        'WA': {
+            html: `
+                <h2>About RoboCup Junior Western Australia</h2>
+                <p>
+                    RoboCup Junior Western Australia (RCJWA) is the Western Australian chapter of RoboCup Junior Australia,
+                    supporting students through robotics competitions across the state.
+                    Visit the <a href="https://www.robocupjunior.org.au/challenge-regions/wa/" target="_blank" rel="noopener">official WA page</a> to learn more.
+                </p>
+                <p>
+                    📧 Contact: <a href="mailto:wa@robocupjunior.org.au">wa@robocupjunior.org.au</a>
+                </p>
+                <p>
+                    🔗 Follow us:
+                    <a href="https://www.facebook.com/robocupjunioraustralia/" target="_blank" rel="noopener">Facebook</a> ·
+                    <a href="https://www.instagram.com/robocupjunioraustralia/" target="_blank" rel="noopener">Instagram</a> ·
+                    <a href="https://www.linkedin.com/company/rcja" target="_blank" rel="noopener">LinkedIn</a>
+                </p>
+            `
+        },
+        'TAS': {
+            html: `
+                <h2>About RoboCup Junior Tasmania</h2>
+                <p>
+                    RoboCup Junior Tasmania (RCJTAS) is the Tasmanian chapter of RoboCup Junior Australia,
+                    supporting students through robotics competitions across the state.
+                    Visit the <a href="https://www.robocupjunior.org.au/challenge-regions/tas/" target="_blank" rel="noopener">official TAS page</a> to learn more.
+                </p>
+                <p>
+                    📧 Contact: <a href="mailto:tas@robocupjunior.org.au">tas@robocupjunior.org.au</a>
+                </p>
+                <p>
+                    🔗 Follow us:
+                    <a href="https://www.facebook.com/robocupjunioraustralia/" target="_blank" rel="noopener">Facebook</a> ·
+                    <a href="https://www.instagram.com/robocupjunioraustralia/" target="_blank" rel="noopener">Instagram</a> ·
+                    <a href="https://www.linkedin.com/company/rcja" target="_blank" rel="noopener">LinkedIn</a>
+                </p>
+            `
+        },
+        'ACT': {
+            html: `
+                <h2>About RoboCup Junior Australian Capital Territory</h2>
+                <p>
+                    RoboCup Junior ACT (RCJACT) is the Australian Capital Territory chapter of RoboCup Junior Australia,
+                    supporting students through robotics competitions across the territory.
+                    Visit the <a href="https://www.robocupjunior.org.au/challenge-regions/act/" target="_blank" rel="noopener">official ACT page</a> to learn more.
+                </p>
+                <p>
+                    📧 Contact: <a href="https://www.robocupjunior.org.au/contact-us/" target="_blank" rel="noopener">RCJA contact form</a>
+                </p>
+                <p>
+                    🔗 Follow us:
+                    <a href="https://www.facebook.com/robocupjunioraustralia/" target="_blank" rel="noopener">Facebook</a> ·
+                    <a href="https://www.instagram.com/robocupjunioraustralia/" target="_blank" rel="noopener">Instagram</a> ·
+                    <a href="https://www.linkedin.com/company/rcja" target="_blank" rel="noopener">LinkedIn</a>
+                </p>
+            `
+        },
+        'NT': {
+            html: `
+                <h2>About RoboCup Junior Northern Territory</h2>
+                <p>
+                    RoboCup Junior Northern Territory (RCJNT) is the Northern Territory chapter of RoboCup Junior Australia,
+                    supporting students through robotics competitions across the territory.
+                    Visit the <a href="https://www.robocupjunior.org.au/challenge-regions/nt/" target="_blank" rel="noopener">official NT page</a> to learn more.
+                </p>
+                <p>
+                    📧 Contact: <a href="https://www.robocupjunior.org.au/contact-us/" target="_blank" rel="noopener">RCJA contact form</a>
+                </p>
+                <p>
+                    🔗 Follow us:
+                    <a href="https://www.facebook.com/robocupjunioraustralia/" target="_blank" rel="noopener">Facebook</a> ·
+                    <a href="https://www.instagram.com/robocupjunioraustralia/" target="_blank" rel="noopener">Instagram</a> ·
+                    <a href="https://www.linkedin.com/company/rcja" target="_blank" rel="noopener">LinkedIn</a>
+                </p>
+            `
+        },
+        'NAT': {
+            html: `
+                <h2>About RCJA National Events</h2>
+                <p>
+                    This calendar covers RoboCup Junior Australia events run at the national level,
+                    including the Australian National Championships and national workshops.
+                    Visit the <a href="https://www.robocupjunior.org.au/challenge-regions/nat/" target="_blank" rel="noopener">official National page</a> to learn more.
+                </p>
+                <p>
+                    📧 Contact: <a href="https://www.robocupjunior.org.au/contact-us/" target="_blank" rel="noopener">RCJA contact form</a>
+                </p>
+                <p>
+                    🔗 Follow us:
+                    <a href="https://www.facebook.com/robocupjunioraustralia/" target="_blank" rel="noopener">Facebook</a> ·
+                    <a href="https://www.instagram.com/robocupjunioraustralia/" target="_blank" rel="noopener">Instagram</a> ·
+                    <a href="https://www.linkedin.com/company/rcja" target="_blank" rel="noopener">LinkedIn</a>
+                </p>
+            `
+        },
+        'NZ': {
+            html: `
+                <h2>About RoboCup Junior New Zealand</h2>
+                <p>
+                    RoboCup Junior New Zealand (RCJNZ) brings RoboCup Junior competitions to students across New Zealand.
+                    Visit the <a href="https://www.robocupjunior.org.au/challenge-regions/nz/nz-events/" target="_blank" rel="noopener">NZ events page</a> to learn more.
+                </p>
+                <p>
+                    📧 Contact: <a href="https://www.robocupjunior.org.au/contact-us/" target="_blank" rel="noopener">RCJA contact form</a>
+                </p>
+                <p>
+                    🔗 Follow us:
+                    <a href="https://www.facebook.com/robocupjunioraustralia/" target="_blank" rel="noopener">Facebook</a> ·
+                    <a href="https://www.instagram.com/robocupjunioraustralia/" target="_blank" rel="noopener">Instagram</a> ·
+                    <a href="https://www.linkedin.com/company/rcja" target="_blank" rel="noopener">LinkedIn</a>
+                </p>
+            `
+        }
+    };
+
+    // Get state code from URL path
+    const pathParts = window.location.pathname.split('/').filter(p => p && !p.includes('.'));
+    const stateCode = (pathParts[pathParts.length - 1] || 'QLD').toUpperCase();
+    const stateCodeLower = stateCode.toLowerCase();
+    
+    let stateConfig = null;
+    let regionsData = null;
+    let currentRegion = null;
+
+    function escapeHtml(str) {
+        return String(str)
+            .replace(/&/g, "&amp;")
+            .replace(/</g, "&lt;")
+            .replace(/>/g, "&gt;")
+            .replace(/"/g, "&quot;");
+    }
+
+    // Build a venue label, omitting empty parts so we don't render a dangling
+    // comma (e.g. "Virtual Event," when a venue has a name but no address).
+    function formatVenue(venue) {
+        if (!venue) return "TBC";
+        const parts = [venue.name, venue.address].filter(p => p && String(p).trim());
+        return parts.length ? parts.join(", ") : "TBC";
+    }
+
+    // Match a keyword against event text on WORD boundaries, so short codes like
+    // "dd" (Darling Downs) or "act" don't match inside "middle"/"biddeston" or
+    // "practice". Multi-word keywords (e.g. "gold coast") are matched as phrases.
+    function matchesKeyword(text, keyword) {
+        const kw = String(keyword).toLowerCase().trim();
+        if (!kw) return false;
+        const escaped = kw.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+        // Whole-word match with an optional trailing "s" so plurals still hit
+        // (e.g. keyword "championship" matches "Championships") without matching
+        // mid-word (e.g. "dd" won't match "middle", "act" won't match "action").
+        return new RegExp(`(^|[^a-z0-9])${escaped}s?([^a-z0-9]|$)`, "i").test(text);
+    }
+
+    // Decide which sub-region an event belongs to.
+    function regionForEvent(event, eventText) {
+        // National-feed events (or anything explicitly named "national(s)") belong
+        // under the Nationals sub-region when the state defines one, instead of
+        // being dumped into the geographic default (e.g. "South East QLD").
+        const hasNationals = stateConfig.subRegions && stateConfig.subRegions.nationals;
+        if (hasNationals && (event._national || /(^|[^a-z])nationals?([^a-z]|$)/i.test(event.name || ""))) {
+            return "nationals";
+        }
+        // Otherwise match sub-regions in the configured display order for a
+        // deterministic, predictable result.
+        const order = (stateConfig.regionOrder && stateConfig.regionOrder.length)
+            ? stateConfig.regionOrder
+            : Object.keys(stateConfig.subRegions);
+        for (const key of order) {
+            const region = stateConfig.subRegions[key];
+            if (region && region.keywords && region.keywords.some(k => matchesKeyword(eventText, k))) {
+                return key;
+            }
+        }
+        return stateConfig.defaultRegion || order[0];
+    }
+
+    function showRegion(btn, regionKey) {
+        if (!regionsData || !regionsData[regionKey]) {
+            document.getElementById("display-area").innerHTML = `
+                <div class="placeholder-text">
+                    <div class="robot-icon">🤖</div>
+                    <p>No data available for this region.</p>
+                </div>`;
+            return;
+        }
+
+        currentRegion = regionKey;
+        const region = regionsData[regionKey];
+        const events = region.events || [];
+        const regionTitle = stateConfig.subRegions[regionKey]?.title || regionKey;
+
+        // Update active button
+        document.querySelectorAll('.region-btn').forEach(el => {
+            el.classList.remove('active');
+        });
+        btn.classList.add('active');
+
+        let eventsHtml;
+        if (events.length === 0) {
+            eventsHtml = '<div class="no-events">No upcoming events for this region</div>';
+        } else {
+            eventsHtml = events.map((evt, index) => {
+                const stateClass = evt.highlight ? ' state-highlight' : '';
+                const stateIcon = evt.highlight ? '🏆 ' : '';
+                const registerLink = evt.registrationURL
+                    ? `<a href="${escapeHtml(evt.registrationURL)}" target="_blank" rel="noopener" class="event-link" onclick="event.stopPropagation()">Register →</a>`
+                    : "";
+                
+                return `
+                    <div class="event-item${stateClass}" onclick="showEventModal(${index}, '${regionKey}')">
+                        <span class="date-tag">${escapeHtml(evt.date)}</span>
+                        <span class="event-title">${stateIcon}${escapeHtml(evt.name)}</span>
+                        <div class="event-desc">${escapeHtml(evt.desc)}</div>
+                        ${registerLink}
+                    </div>`;
+            }).join("");
+        }
+
+        document.getElementById("display-area").innerHTML = `
+            <div class="event-card">
+                <h2>${escapeHtml(regionTitle)}</h2>
+                ${eventsHtml}
+            </div>`;
+    }
+
+    function loadConfig() {
+        $.ajax({
+            url: '../config.json',
+            type: "GET",
+            dataType: "json",
+            success: function (allConfigs) {
+                const config = allConfigs[stateCode];
+                if (!config || !config.enabled) {
+                    document.getElementById("page-header").innerHTML = `
+                        <img src="../favicon-32x32.png" alt="RCJA" style="vertical-align: middle;">
+                        <span>Error</span>
+                    `;
+                    document.getElementById("display-area").innerHTML = `
+                        <div class="placeholder-text">
+                            <div style="color: #d32f2f; margin-bottom: 20px;">⚠️</div>
+                            <p style="color: #d32f2f;">State not found</p>
+                            <small>${escapeHtml(`Regional page not available for: ${stateCode}`)}</small>
+                        </div>`;
+                    return;
+                }
+                
+                stateConfig = config;
+                
+                // Update page title and header
+                document.getElementById("page-title").textContent = config.title;
+                document.getElementById("page-header").innerHTML = `
+                    <img src="../favicon-32x32.png" alt="RCJA" style="vertical-align: middle;">
+                    <span>${escapeHtml(config.title)}</span>
+                `;
+                
+                // Update sidebar title
+                const year = new Date().getFullYear();
+                document.getElementById("sidebar-title").textContent = `${year} SEASON`;
+                
+                // Create region buttons
+                const buttonsHtml = config.regionOrder.map(regionKey => {
+                    const regionConfig = config.subRegions[regionKey];
+                    const title = regionConfig ? regionConfig.title : regionKey;
+                    return `<button class="region-btn" onclick="showRegion(this, '${regionKey}')">${escapeHtml(title)}</button>`;
+                }).join("");
+                document.getElementById("region-buttons").innerHTML = buttonsHtml;
+                
+                // Load events data
+                loadData();
+            },
+            error: function (err) {
+                document.getElementById("page-header").innerHTML = `
+                    <img src="../favicon-32x32.png" alt="RCJA" style="vertical-align: middle;">
+                    <span>Error</span>
+                `;
+                document.getElementById("display-area").innerHTML = `
+                    <div class="placeholder-text">
+                        <div style="color: #d32f2f; margin-bottom: 20px;">⚠️</div>
+                        <p style="color: #d32f2f;">Unable to load configuration</p>
+                        <small>${escapeHtml((err.responseJSON && err.responseJSON.error) || 'Failed to load state configuration.')}</small>
+                    </div>`;
+            }
+        });
+    }
+
+    function loadData() {
+        document.getElementById("display-area").innerHTML = `
+            <div class="loading-spinner">
+                <div class="spinner"></div>
+                <p>Loading events…</p>
+            </div>`;
+
+        function processEvents(events) {
+            // Filter to only show future/ongoing events
+            const today = new Date();
+            today.setHours(0, 0, 0, 0);
+            const futureEvents = events.filter(event => {
+                const eventDate = event.endDate ? new Date(event.endDate) : new Date(event.startDate);
+                return eventDate >= today;
+            });
+            
+            // Categorize events into regions based on keywords
+            regionsData = {};
+            
+            // Initialize all regions
+            for (const [key, region] of Object.entries(stateConfig.subRegions)) {
+                regionsData[key] = { events: [] };
+            }
+            
+            // Categorize each event
+            futureEvents.forEach(event => {
+                const eventName = (event.name || "").toLowerCase();
+                const venue = event.venue ? `${event.venue.name || ''} ${event.venue.address || ''}`.toLowerCase() : '';
+                const eventText = eventName + " " + venue;
+                const isHighlight = eventName.includes("state") || eventName.includes("national");
+
+                const regionKey = regionForEvent(event, eventText);
+                const targetRegion = regionsData[regionKey] || regionsData[stateConfig.defaultRegion];
+                if (!targetRegion) return; // no valid region to place it in
+
+                const startDate = event.startDate ? new Date(event.startDate) : new Date();
+                targetRegion.events.push({
+                    name: event.name,
+                    date: startDate.toLocaleDateString("en-AU", { month: 'short', day: 'numeric' }),
+                    desc: formatVenue(event.venue),
+                    registrationURL: event.registrationURL,
+                    highlight: isHighlight,
+                    startDate: event.startDate,
+                    fullData: event
+                });
+            });
+            
+            // Sort events within each region by date
+            for (const region of Object.values(regionsData)) {
+                region.events.sort((a, b) => new Date(a.startDate) - new Date(b.startDate));
+            }
+            
+            // Debug logging
+            console.log('Total events loaded:', futureEvents.length, '(filtered from', events.length, 'total)');
+            console.log('Events by region:', Object.entries(regionsData).map(([key, data]) => `${key}: ${data.events.length}`).join(', '));
+            
+            document.getElementById("last-updated").innerHTML =
+                '⏱️ Last updated: ' + new Date().toLocaleTimeString("en-AU") +
+                '<span style="margin-left: 15px;">·</span>' +
+                '<a href="../sync/" style="margin-left: 15px; color: #999; text-decoration: none;">Sync to Calendar</a>';
+            
+            // Auto-select first region
+            const firstRegionKey = stateConfig.regionOrder[0];
+            if (firstRegionKey) {
+                const firstRegionBtn = document.querySelector(`button[onclick*="'${firstRegionKey}'"]`);
+                if (firstRegionBtn) {
+                    setTimeout(() => showRegion(firstRegionBtn, firstRegionKey), 100);
+                }
+            }
+        }
+
+        $.ajax({
+            url: `../data/${stateCodeLower}-events.json`,
+            type: "GET",
+            dataType: "json",
+            success: function (stateEvents) {
+                if (stateCode === 'NAT') {
+                    processEvents(stateEvents);
+                } else {
+                    $.ajax({
+                        url: '../data/nat-events.json', type: "GET", dataType: "json",
+                        success: function (natEvents) {
+                            const seenIds = new Set(stateEvents.map(e => e.id));
+                            // Tag events that come from the national feed so they can be
+                            // grouped under "Nationals" rather than a geographic sub-region.
+                            const uniqueNatEvents = natEvents
+                                .filter(e => !seenIds.has(e.id))
+                                .map(e => Object.assign({ _national: true }, e));
+                            processEvents(stateEvents.concat(uniqueNatEvents));
+                        },
+                        error: function () { processEvents(stateEvents); }
+                    });
+                }
+            },
+            error: function (err) {
+                document.getElementById("display-area").innerHTML = `
+                    <div class="placeholder-text">
+                        <div style="color: #d32f2f; margin-bottom: 20px;">⚠️</div>
+                        <p style="color: #d32f2f;">Error loading events</p>
+                        <small>${escapeHtml((err.responseJSON && err.responseJSON.error) || "Failed to load events. Please try again.")}</small>
+                    </div>`;
+            }
+        });
+    }
+
+    function showEventModal(eventIndex, regionKey) {
+        const event = regionsData[regionKey].events[eventIndex];
+        if (!event || !event.fullData) return;
+        
+        const data = event.fullData;
+        const modal = document.getElementById('eventModal');
+        const modalTitle = document.getElementById('modalTitle');
+        const modalBody = document.getElementById('modalBody');
+        
+        modalTitle.textContent = data.name || 'Event Details';
+        
+        // Format dates
+        const formatDate = (dateStr) => dateStr ? new Date(dateStr).toLocaleDateString("en-AU", { 
+            year: 'numeric', month: 'long', day: 'numeric' 
+        }) : 'TBC';
+        
+        // Format divisions as individual tags instead of one long comma list
+        const divisions = data.availabledivisions && data.availabledivisions.length > 0
+            ? data.availabledivisions.map(d => `<span class="division-tag">${escapeHtml(d.name)}</span>`).join('')
+            : '<span class="detail-muted">Not specified</span>';
+
+        // Format enquiries
+        const enquiries = data.directEnquiriesTo
+            ? `${escapeHtml(data.directEnquiriesTo.fullName)} (<a href="mailto:${escapeHtml(data.directEnquiriesTo.email)}">${escapeHtml(data.directEnquiriesTo.email)}</a>)`
+            : 'See registration link';
+
+        // Format venue, dropping an empty address line so we don't render a blank row
+        const venue = data.venue
+            ? [data.venue.name, data.venue.address]
+                .filter(p => p && String(p).trim())
+                .map(escapeHtml)
+                .join('<br>') || 'TBC'
+            : 'TBC';
+        
+        modalBody.innerHTML = `
+            <div class="modal-detail">
+                <strong>Event Date:</strong>
+                ${formatDate(data.startDate)}${data.endDate && data.endDate !== data.startDate ? ' to ' + formatDate(data.endDate) : ''}
+            </div>
+            <div class="modal-detail">
+                <strong>Registrations Open:</strong>
+                ${formatDate(data.registrationsOpenDate)} to ${formatDate(data.registrationsCloseDate)}
+            </div>
+            <div class="modal-detail">
+                <strong>Venue:</strong>
+                <div>${venue}</div>
+            </div>
+            <div class="modal-detail">
+                <strong>Event Type:</strong>
+                ${escapeHtml(data.eventType || 'Competition')}
+            </div>
+            <div class="modal-detail">
+                <strong>Available Divisions:</strong>
+                <div class="division-tags">${divisions}</div>
+            </div>
+            <div class="modal-detail">
+                <strong>Direct Enquiries To:</strong>
+                <div>${enquiries}</div>
+            </div>
+            ${data.registrationURL ? `
+            <div class="modal-detail">
+                <strong>Registration Link:</strong>
+                <div><a href="${escapeHtml(data.registrationURL)}" target="_blank" style="color: #192f59; word-break: break-all;">${escapeHtml(data.registrationURL)}</a></div>
+            </div>` : ''}
+            ${data.bleachedEventDetails ? `
+            <div class="modal-detail">
+                <strong>Description:</strong>
+                <!-- bleachedEventDetails is server-sanitized HTML (via the bleach library on the RCJA Entry System API).
+                     It is safe to render as innerHTML. Do not escape it, as it may contain intentional formatting
+                     such as links, bold text, and lists. -->
+                <div style="white-space: pre-wrap;">${data.bleachedEventDetails}</div>
+            </div>` : ''}
+        `;
+        
+        modal.style.display = 'block';
+    }
+    
+    function closeModal() {
+        document.getElementById('eventModal').style.display = 'none';
+    }
+    
+    // Close modal when clicking X or outside modal
+    window.onclick = function(event) {
+        const modal = document.getElementById('eventModal');
+        if (event.target == modal) {
+            closeModal();
+        }
+    };
+
+    document.addEventListener("DOMContentLoaded", function () {
+        // Show state-specific about section if content exists for this state
+        const aboutContent = stateAboutContent[stateCode];
+        if (aboutContent) {
+            const aboutEl = document.getElementById('state-about');
+            aboutEl.innerHTML = aboutContent.html;
+            aboutEl.style.display = 'block';
+        }
+        
+        loadConfig();
+        // Auto-refresh every 5 minutes
+        setInterval(loadData, 5 * 60 * 1000);
+        
+        // Set up modal close button
+        document.querySelector('.modal-close').onclick = closeModal;
+    });
+</script>
+</body>
+</html>

@@ -1,0 +1,1604 @@
+[
+  {
+    "id": 306,
+    "state": 7,
+    "name": "Bundaberg Introductory Workshop",
+    "eventType": "workshop",
+    "cmsEventId": null,
+    "startDate": "2026-02-18",
+    "endDate": "2026-02-18",
+    "registrationsOpenDate": "2026-01-20",
+    "registrationsCloseDate": "2026-02-17",
+    "maxMembersPerTeam": 0,
+    "event_maxRegistrationsPerSchool": null,
+    "event_maxRegistrationsForEvent": null,
+    "entryFeeIncludesGST": true,
+    "competition_defaultEntryFee": 0,
+    "paymentDueDate": "2026-02-18",
+    "competition_billingType": "team",
+    "competition_specialRateNumber": null,
+    "competition_specialRateFee": null,
+    "workshopTeacherEntryFee": 0,
+    "workshopStudentEntryFee": 5,
+    "eventSurchargeAmount": 0,
+    "surchargeName": "Surcharge",
+    "surchargeEventDescription": "",
+    "directEnquiriesTo": {
+      "fullName": "Matthew Hollett",
+      "email": "mholl172@eq.edu.au"
+    },
+    "venue": {
+      "name": "Kepnock State High School",
+      "address": "43 Kepnock Rd, Bundaberg Central QLD 4670"
+    },
+    "bleachedEventDetails": "•\tLocation: Kepnock State High School Training Rooms (43 Kepnock Rd, Bundaberg Central QLD 4670)\n•\tTime: 9am - 2pm\n•\tRegistration is open to school and community based teams.\n•\tPlease bring along own iPads and robots (charged). Pre-built robots would be an advantage for Rescue so focus can be on coding.\n•\tStaff and students are asked to bring their own lunch please.\n•\tWorkshop focus: Scratch Programming for use with EV3 and Spike robots. Assistance can be provided around Python coding for Spike Prime Robots within the Lego app. Other robots (non-Lego) are most welcome to attend, though robot specific resources/volunteer experience may not exist in those platforms.\n\nThis workshop is designed to provide beginner and refresher training for key RoboCup challenges. It is a great opportunity for participants to learn, collaborate, and prepare for upcoming competitions. The day is also highly valuable for mentors, as they can deepen their understanding of the challenges, ask volunteers questions about rules and formats, and gain practical tips and tricks to support their teams. Teachers are encouraged to attend and participate with their students. Please ensure an appropriate ratio between students and teachers (RoboCup volunteers are not responsible for student participants).",
+    "effectiveBannerImageURL": "https://rcjaregistration-prod-public.s3.amazonaws.com/DefaultEventImages/DefaultEventImage_76077de9-10a1-4526-9d7a-5b2e76e6454b.jpg",
+    "registrationURL": "https://enter.robocupjunior.org.au/events/306",
+    "availabledivisions": [
+      {
+        "name": "OnStage",
+        "description": "Workshop Division",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      },
+      {
+        "name": "Rescue Line",
+        "description": "Workshop Division",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      },
+      {
+        "name": "Soccer",
+        "description": "Workshop Division",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      }
+    ]
+  },
+  {
+    "id": 310,
+    "state": 7,
+    "name": "DD Intro to RoboCup Junior –Maze,Line and Onstage",
+    "eventType": "workshop",
+    "cmsEventId": null,
+    "startDate": "2026-02-27",
+    "endDate": "2026-02-27",
+    "registrationsOpenDate": "2026-02-06",
+    "registrationsCloseDate": "2026-02-27",
+    "maxMembersPerTeam": 0,
+    "event_maxRegistrationsPerSchool": null,
+    "event_maxRegistrationsForEvent": null,
+    "entryFeeIncludesGST": true,
+    "competition_defaultEntryFee": 25,
+    "paymentDueDate": "2026-02-27",
+    "competition_billingType": "team",
+    "competition_specialRateNumber": null,
+    "competition_specialRateFee": null,
+    "workshopTeacherEntryFee": 25,
+    "workshopStudentEntryFee": 0,
+    "eventSurchargeAmount": 0,
+    "surchargeName": "Surcharge",
+    "surchargeEventDescription": "",
+    "directEnquiriesTo": {
+      "fullName": "Jay Wright",
+      "email": "jwrig318@eq.edu.au"
+    },
+    "venue": {
+      "name": "Vale View State School",
+      "address": "873 Drayton-Connection Road, Vale View, Qld, 4352"
+    },
+    "bleachedEventDetails": "Introduction to RoboCup Junior – Maze, Line and OnStage (4pm-6pm workshop then networking/social drinks 6-7pm)\n\nThis workshop is a practical introduction to the RoboCup Junior competition, designed for teachers/mentors/parents who are new to RoboCup or who want greater confidence supporting student teams.\n\nThe session will cover the three core events offered at the regional level: Rescue Line, Rescue Maze and OnStage. Teachers will be guided through how each event works, what students are expected to do and how schools can get started with minimal equipment.\n\nParticipants will:\n\t•\tGain a clear understanding of the Maze, Line and OnStage challenges and rules\n\t•\tExplore example robots and typical sensors used in each event\n\t•\tTake part in hands-on activities with robots and basic programming\n\t•\tLearn how to structure sessions, manage teams and scaffold student learning\n\t•\tReceive practical tips for preparing teams for the upcoming RoboCup season\n\nThis is a supportive, hands-on workshop with a strong focus on building teacher confidence. No prior RoboCup experience is required. The session is suitable for primary and secondary teachers involved in Technologies, robotics clubs or extracurricular STEM programs.\n\nPlease consider staying after the session to have a free drink (or two) and connect with other teachers and mentors. RoboCup Junior is strongest when we can collaborate, share ideas and support one another throughout the season. This will be a great opportunity to build relationships, ask questions and strengthen local networks.\n\nThe Queensland Society for IT in Education (QSITE) provides support for teachers to integrate technology in schools. The Toowoomba chapter of QSITE is proud to support RoboCup Junior and is providing complimentary refreshments for a networking session after the RoboCup Junior workshops.",
+    "effectiveBannerImageURL": "https://rcjaregistration-prod-public.s3.amazonaws.com/DefaultEventImages/DefaultEventImage_76077de9-10a1-4526-9d7a-5b2e76e6454b.jpg",
+    "registrationURL": "https://enter.robocupjunior.org.au/events/310",
+    "availabledivisions": [
+      {
+        "name": "OnStage",
+        "description": "Workshop Division",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      },
+      {
+        "name": "Rescue Line",
+        "description": "Workshop Division",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      },
+      {
+        "name": "Rescue Maze",
+        "description": "Workshop Division",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      }
+    ]
+  },
+  {
+    "id": 311,
+    "state": 7,
+    "name": "DD Introduction to RoboCup Junior – Soccer",
+    "eventType": "workshop",
+    "cmsEventId": null,
+    "startDate": "2026-03-06",
+    "endDate": "2026-03-06",
+    "registrationsOpenDate": "2026-02-06",
+    "registrationsCloseDate": "2026-03-04",
+    "maxMembersPerTeam": 0,
+    "event_maxRegistrationsPerSchool": null,
+    "event_maxRegistrationsForEvent": null,
+    "entryFeeIncludesGST": true,
+    "competition_defaultEntryFee": 25,
+    "paymentDueDate": "2026-02-27",
+    "competition_billingType": "team",
+    "competition_specialRateNumber": null,
+    "competition_specialRateFee": null,
+    "workshopTeacherEntryFee": 25,
+    "workshopStudentEntryFee": 25,
+    "eventSurchargeAmount": 0,
+    "surchargeName": "Surcharge",
+    "surchargeEventDescription": "",
+    "directEnquiriesTo": {
+      "fullName": "Jay Wright",
+      "email": "jwrig318@eq.edu.au"
+    },
+    "venue": {
+      "name": "Vale View State School",
+      "address": "873 Drayton-Connection Road, Vale View, Qld, 4352"
+    },
+    "bleachedEventDetails": "Introduction to RoboCup Junior – Soccer (4-6pm workshop then 6-7pm networking/social drinks)\nThis workshop provides a practical introduction to RoboCup Junior Soccer, aimed at teachers, mentors or parents who are new to the Soccer competition or who want to build confidence supporting student teams.\n\nThe session focuses on how RoboCup Junior Soccer works at the regional level, including the rules, field setup and the core concepts students need to succeed. Teachers will explore how robots detect the ball, move accurately on the field and work within the constraints of the competition.\n\nParticipants will:\n\t•\tDevelop a clear understanding of RoboCup Junior Soccer rules and match structure\n\t•\tLearn how robots locate and track the infrared ball\n\t•\tExplore drive systems, sensors and basic control strategies used in Soccer robots\n\t•\tTake part in hands-on activities with robots and simple programming examples\n\t•\tGain practical advice for setting up teams and running training sessions at school\n\nThis is a hands-on, teacher-friendly workshop designed to demystify RoboCup Junior Soccer and help schools confidently prepare teams for the upcoming competition season. No prior RoboCup Soccer experience is required.\n\nPlease consider staying after the session to have a free drink (or two) and connect with other teachers and mentors. RoboCup Junior is strongest when we can collaborate, share ideas and support one another throughout the season. This will be a great opportunity to build relationships, ask questions and strengthen local networks.\n\nThe Queensland Society for IT in Education (QSITE) provides support for teachers to integrate technology in schools. The Toowoomba chapter of QSITE is proud to support RoboCup Junior and is providing complimentary refreshments for a networking session after the RoboCup Junior workshops.",
+    "effectiveBannerImageURL": "https://rcjaregistration-prod-public.s3.amazonaws.com/DefaultEventImages/DefaultEventImage_76077de9-10a1-4526-9d7a-5b2e76e6454b.jpg",
+    "registrationURL": "https://enter.robocupjunior.org.au/events/311",
+    "availabledivisions": [
+      {
+        "name": "Soccer",
+        "description": "Workshop Division",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      }
+    ]
+  },
+  {
+    "id": 321,
+    "state": 7,
+    "name": "Gladstone Regional Sumo Competition",
+    "eventType": "competition",
+    "cmsEventId": "26_QL_GLADS_ACD",
+    "startDate": "2026-03-26",
+    "endDate": "2026-03-26",
+    "registrationsOpenDate": "2026-03-02",
+    "registrationsCloseDate": "2026-03-23",
+    "maxMembersPerTeam": 4,
+    "event_maxRegistrationsPerSchool": null,
+    "event_maxRegistrationsForEvent": 100,
+    "entryFeeIncludesGST": true,
+    "competition_defaultEntryFee": 0,
+    "paymentDueDate": null,
+    "competition_billingType": "team",
+    "competition_specialRateNumber": null,
+    "competition_specialRateFee": null,
+    "workshopTeacherEntryFee": 50,
+    "workshopStudentEntryFee": 50,
+    "eventSurchargeAmount": 0,
+    "surchargeName": "Surcharge",
+    "surchargeEventDescription": "",
+    "directEnquiriesTo": {
+      "fullName": "tracey iki",
+      "email": "tracey_iki@rok.catholic.edu.au"
+    },
+    "venue": {
+      "name": "Chanel College",
+      "address": "11 Paterson Street, Gladstone QLD 4680"
+    },
+    "bleachedEventDetails": "Gladstone Regionals Competition for Rescue Line and OnStage and Sumo. More information coming coming.\nRegistration opens 2nd March, closes 23rd March",
+    "effectiveBannerImageURL": "https://rcjaregistration-prod-public.s3.amazonaws.com/DefaultEventImages/DefaultEventImage_76077de9-10a1-4526-9d7a-5b2e76e6454b.jpg",
+    "registrationURL": "https://enter.robocupjunior.org.au/events/321",
+    "availabledivisions": [
+      {
+        "name": "Sumo - Primary",
+        "description": "",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      },
+      {
+        "name": "Sumo - Secondary",
+        "description": "",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      }
+    ]
+  },
+  {
+    "id": 339,
+    "state": 7,
+    "name": "Brisbane Intro Workshop (Maze/Soccer/OnStage)",
+    "eventType": "workshop",
+    "cmsEventId": null,
+    "startDate": "2026-04-20",
+    "endDate": "2026-04-20",
+    "registrationsOpenDate": "2026-03-06",
+    "registrationsCloseDate": "2026-04-13",
+    "maxMembersPerTeam": 0,
+    "event_maxRegistrationsPerSchool": null,
+    "event_maxRegistrationsForEvent": null,
+    "entryFeeIncludesGST": true,
+    "competition_defaultEntryFee": null,
+    "paymentDueDate": null,
+    "competition_billingType": "team",
+    "competition_specialRateNumber": null,
+    "competition_specialRateFee": null,
+    "workshopTeacherEntryFee": 25,
+    "workshopStudentEntryFee": 0,
+    "eventSurchargeAmount": 0,
+    "surchargeName": "Surcharge",
+    "surchargeEventDescription": "",
+    "directEnquiriesTo": {
+      "fullName": "RoboCupJunior Queensland",
+      "email": "qld@robocupjunior.org.au"
+    },
+    "venue": {
+      "name": "Moreton Bay Boys' College",
+      "address": "The Library\r\nMoreton Bay Boys' College\r\n302 Manly Rd\r\nManly West QLD 4179"
+    },
+    "bleachedEventDetails": "Brisbane Workshop - Introduction to Maze, Soccer and Rescue\n20th Apr T2W1 Monday\nStudents please bring their own food\nLunch and morning tea provided for teachers\nThis event runs from 9am to 2pm.",
+    "effectiveBannerImageURL": "https://rcjaregistration-prod-public.s3.amazonaws.com/VenueImages/VenueImage_28421735-0cee-4f51-8a17-4511b323fd55.png",
+    "registrationURL": "https://enter.robocupjunior.org.au/events/339",
+    "availabledivisions": [
+      {
+        "name": "OnStage",
+        "description": "Workshop Division",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      },
+      {
+        "name": "Rescue Maze",
+        "description": "Workshop Division",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      },
+      {
+        "name": "Soccer",
+        "description": "Workshop Division",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      }
+    ]
+  },
+  {
+    "id": 340,
+    "state": 7,
+    "name": "Brisbane Intro Workshop (Line Sumo)",
+    "eventType": "workshop",
+    "cmsEventId": null,
+    "startDate": "2026-04-28",
+    "endDate": "2026-04-28",
+    "registrationsOpenDate": "2026-03-06",
+    "registrationsCloseDate": "2026-04-22",
+    "maxMembersPerTeam": 0,
+    "event_maxRegistrationsPerSchool": null,
+    "event_maxRegistrationsForEvent": null,
+    "entryFeeIncludesGST": true,
+    "competition_defaultEntryFee": null,
+    "paymentDueDate": null,
+    "competition_billingType": "team",
+    "competition_specialRateNumber": null,
+    "competition_specialRateFee": null,
+    "workshopTeacherEntryFee": 25,
+    "workshopStudentEntryFee": 0,
+    "eventSurchargeAmount": 0,
+    "surchargeName": "Surcharge",
+    "surchargeEventDescription": "",
+    "directEnquiriesTo": {
+      "fullName": "RoboCupJunior Queensland",
+      "email": "qld@robocupjunior.org.au"
+    },
+    "venue": {
+      "name": "Stretton State College",
+      "address": "226 Illaweena St, Stretton QLD 4116"
+    },
+    "bleachedEventDetails": "Brisbane workshop for Introduction to Rescue Line and Sumo. Workshop runs from 9.45am to 2pm",
+    "effectiveBannerImageURL": "https://rcjaregistration-prod-public.s3.amazonaws.com/DefaultEventImages/DefaultEventImage_76077de9-10a1-4526-9d7a-5b2e76e6454b.jpg",
+    "registrationURL": "https://enter.robocupjunior.org.au/events/340",
+    "availabledivisions": [
+      {
+        "name": "Sumo - Primary",
+        "description": "",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      },
+      {
+        "name": "Sumo - Secondary",
+        "description": "",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      },
+      {
+        "name": "Rescue Line",
+        "description": "Workshop Division",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      }
+    ]
+  },
+  {
+    "id": 318,
+    "state": 7,
+    "name": "Gladstone Intro to RCJ - Soccer, Line, OnStage",
+    "eventType": "workshop",
+    "cmsEventId": null,
+    "startDate": "2026-05-01",
+    "endDate": "2026-05-01",
+    "registrationsOpenDate": "2026-04-01",
+    "registrationsCloseDate": "2026-04-28",
+    "maxMembersPerTeam": 0,
+    "event_maxRegistrationsPerSchool": null,
+    "event_maxRegistrationsForEvent": null,
+    "entryFeeIncludesGST": true,
+    "competition_defaultEntryFee": null,
+    "paymentDueDate": null,
+    "competition_billingType": "team",
+    "competition_specialRateNumber": null,
+    "competition_specialRateFee": null,
+    "workshopTeacherEntryFee": 0,
+    "workshopStudentEntryFee": 0,
+    "eventSurchargeAmount": 0,
+    "surchargeName": "Surcharge",
+    "surchargeEventDescription": "",
+    "directEnquiriesTo": {
+      "fullName": "tracey iki",
+      "email": "tracey_iki@rok.catholic.edu.au"
+    },
+    "venue": {
+      "name": "Chanel College",
+      "address": "11 Paterson Street, Gladstone QLD 4680"
+    },
+    "bleachedEventDetails": "Gladstone Introduction to RoboCup Junior Workshop for Soccer, Rescue Line and OnStage divisions. Registrations open 1st April, close 26th April.",
+    "effectiveBannerImageURL": "https://rcjaregistration-prod-public.s3.amazonaws.com/DefaultEventImages/DefaultEventImage_76077de9-10a1-4526-9d7a-5b2e76e6454b.jpg",
+    "registrationURL": "https://enter.robocupjunior.org.au/events/318",
+    "availabledivisions": [
+      {
+        "name": "OnStage",
+        "description": "Workshop Division",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      },
+      {
+        "name": "Rescue Line",
+        "description": "Workshop Division",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      },
+      {
+        "name": "Soccer",
+        "description": "Workshop Division",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      }
+    ]
+  },
+  {
+    "id": 312,
+    "state": 7,
+    "name": "Bundaberg Regional RoboCup Competition",
+    "eventType": "competition",
+    "cmsEventId": "26_QL_BUNDA_41E",
+    "startDate": "2026-05-20",
+    "endDate": "2026-05-20",
+    "registrationsOpenDate": "2026-02-18",
+    "registrationsCloseDate": "2026-05-14",
+    "maxMembersPerTeam": 4,
+    "event_maxRegistrationsPerSchool": null,
+    "event_maxRegistrationsForEvent": null,
+    "entryFeeIncludesGST": true,
+    "competition_defaultEntryFee": 15,
+    "paymentDueDate": "2026-05-20",
+    "competition_billingType": "team",
+    "competition_specialRateNumber": null,
+    "competition_specialRateFee": null,
+    "workshopTeacherEntryFee": 10,
+    "workshopStudentEntryFee": 10,
+    "eventSurchargeAmount": 0,
+    "surchargeName": "Surcharge",
+    "surchargeEventDescription": "",
+    "directEnquiriesTo": {
+      "fullName": "Matthew Hollett",
+      "email": "mholl172@eq.edu.au"
+    },
+    "venue": {
+      "name": "Kepnock State High School",
+      "address": "43 Kepnock Rd, Bundaberg Central QLD 4670"
+    },
+    "bleachedEventDetails": "• Location: RJ Young Hall, Kepnock State High School (43 Kepnock Rd, Bundaberg, QLD 4670)\n• Time: 9am - 2pm\n• Registration is open to school and community-based teams.\n• Staff and students are asked to bring their own lunch. We will update mentors if coffee/food vans become available.\n• Each registered school/club must provide an official on the day. Non-teaching volunteers welcome e.g. parents, past RoboCup siblings etc. with all necessary training being provided on the day. Additional volunteers welcome.\n• Individual schools/clubs are responsible for the supervision of their own teams. Please ensure an appropriate ratio between students/adults is adhered to.\nCompetition Handbook will be emailed out to mentors with more information including event specific rule changes.",
+    "effectiveBannerImageURL": "https://rcjaregistration-prod-public.s3.amazonaws.com/DefaultEventImages/DefaultEventImage_76077de9-10a1-4526-9d7a-5b2e76e6454b.jpg",
+    "registrationURL": "https://enter.robocupjunior.org.au/events/312",
+    "availabledivisions": [
+      {
+        "name": "Novice OnStage Performance",
+        "description": "",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      },
+      {
+        "name": "Open OnStage Performance",
+        "description": "",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      },
+      {
+        "name": "Primary Rescue Line",
+        "description": "",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      },
+      {
+        "name": "Riley Rover Rescue Line",
+        "description": "",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      },
+      {
+        "name": "Secondary Rescue Line",
+        "description": "",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      },
+      {
+        "name": "Standard Soccer",
+        "description": "",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      }
+    ]
+  },
+  {
+    "id": 319,
+    "state": 7,
+    "name": "Brisbane Regionals Competition",
+    "eventType": "competition",
+    "cmsEventId": "26_QL_BRISB_DE1",
+    "startDate": "2026-05-23",
+    "endDate": "2026-05-24",
+    "registrationsOpenDate": "2026-02-23",
+    "registrationsCloseDate": "2026-05-15",
+    "maxMembersPerTeam": 4,
+    "event_maxRegistrationsPerSchool": null,
+    "event_maxRegistrationsForEvent": null,
+    "entryFeeIncludesGST": true,
+    "competition_defaultEntryFee": 50,
+    "paymentDueDate": null,
+    "competition_billingType": "team",
+    "competition_specialRateNumber": null,
+    "competition_specialRateFee": null,
+    "workshopTeacherEntryFee": 50,
+    "workshopStudentEntryFee": 50,
+    "eventSurchargeAmount": 0,
+    "surchargeName": "Surcharge",
+    "surchargeEventDescription": "",
+    "directEnquiriesTo": {
+      "fullName": "RoboCupJunior Queensland",
+      "email": "qld@robocupjunior.org.au"
+    },
+    "venue": {
+      "name": "Brisbane Boys' College",
+      "address": "Middle School Precinct, Brisbane Boys’ College, Kensington Terrace, Toowong 4066"
+    },
+    "bleachedEventDetails": "🤖 <b>RoboCup Junior Brisbane Regionals 2026</b>\n📍 <b>Brisbane Boys’ College</b>\n🔗<b><a href=\"https://canva.link/rcjbne26\">Click here for Information Pack</a></b>: https://canva.link/rcjbne26\n\nBrisbane RoboCup Junior Regionals are coming soon, with <b>all divisions</b> competing across the event.\n\n\n📅 <b>Important Dates</b>\n\n• Registration closes: <b>15 May 2026</b>\n• Competition dates: <b>23–24 May 2026</b>\n\n📢 <b>Division Scheduling</b>\n\nDifferent divisions will compete on different days. Competitors will be notified <b>before 20 May</b> which day their division will compete.\n\n🎭 <b>OnStage Technical Posters</b>\n\nTechnical posters are <b>required ONLY for OnStage divisions</b>.\nThey are <b>not required</b> for Rescue, Soccer, or Sumo divisions.\n\nFor Rescue / Soccer / Sumo teams, mentors are encouraged to help students reflect on:\n• 1–2 things they like about their robot\n• 1 thing they would improve, and how they would improve it\n\nTo reiterate: <b>Technical posters are mandatory for OnStage divisions only.</b>\n\n🥋 <b>Important Sumo Registration Notice (SEQLD Competitors)</b>\n\nSumo competitor numbers may need to be capped. To help ensure as many students as possible can participate, SEQLD competitors are asked to register for <b>only ONE</b> Brisbane-area Sumo competition:\n\n• Brisbane North – 13 June\n• Brisbane Regionals – 23–24 May\n• Ormiston Sumo Regionals – 19 July\n\nIf registrations exceed capacity, preference will be given to:\n\n1. Competitors registered for only one competition\n2. Order of registration\n\n<b>Register early to secure your place!</b>",
+    "effectiveBannerImageURL": "https://rcjaregistration-prod-public.s3.amazonaws.com/VenueImages/VenueImage_e96aed6e-c202-4a87-8a1c-dc88f9eecb2e.jpg",
+    "registrationURL": "https://enter.robocupjunior.org.au/events/319",
+    "availabledivisions": [
+      {
+        "name": "Novice OnStage Performance",
+        "description": "",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      },
+      {
+        "name": "Open OnStage Performance",
+        "description": "",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      },
+      {
+        "name": "Open Rescue Line",
+        "description": "",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      },
+      {
+        "name": "Primary Rescue Line",
+        "description": "",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      },
+      {
+        "name": "Riley Rover Rescue Line",
+        "description": "",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      },
+      {
+        "name": "Secondary Rescue Line",
+        "description": "",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      },
+      {
+        "name": "Intermediate Rescue Maze",
+        "description": "",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      },
+      {
+        "name": "Mighty Maisy Rescue Maze",
+        "description": "",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      },
+      {
+        "name": "Open Rescue Maze",
+        "description": "",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      },
+      {
+        "name": "Lightweight Soccer",
+        "description": "",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      },
+      {
+        "name": "Open Soccer",
+        "description": "",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      },
+      {
+        "name": "Simple Simon Soccer",
+        "description": "",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      },
+      {
+        "name": "Standard Soccer",
+        "description": "",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      },
+      {
+        "name": "Sumo - Intermediate",
+        "description": "Sumo (Intermediate)",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      },
+      {
+        "name": "Sumo - Open",
+        "description": "",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      },
+      {
+        "name": "Sumo - Primary",
+        "description": "",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      },
+      {
+        "name": "Sumo - Secondary",
+        "description": "",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      }
+    ]
+  },
+  {
+    "id": 365,
+    "state": 7,
+    "name": "Darling Downs Robocup Team Support Workshop 2026",
+    "eventType": "workshop",
+    "cmsEventId": null,
+    "startDate": "2026-05-29",
+    "endDate": "2026-05-29",
+    "registrationsOpenDate": "2026-05-15",
+    "registrationsCloseDate": "2026-05-28",
+    "maxMembersPerTeam": 0,
+    "event_maxRegistrationsPerSchool": null,
+    "event_maxRegistrationsForEvent": null,
+    "entryFeeIncludesGST": true,
+    "competition_defaultEntryFee": 10,
+    "paymentDueDate": "2026-05-29",
+    "competition_billingType": "team",
+    "competition_specialRateNumber": null,
+    "competition_specialRateFee": null,
+    "workshopTeacherEntryFee": 15,
+    "workshopStudentEntryFee": 0,
+    "eventSurchargeAmount": 0,
+    "surchargeName": "Surcharge",
+    "surchargeEventDescription": "",
+    "directEnquiriesTo": {
+      "fullName": "Jay Wright",
+      "email": "jwrig318@eq.edu.au"
+    },
+    "venue": {
+      "name": "Biddeston State School",
+      "address": "2425 Cecil Plains Road, Biddeston, Qld 4401"
+    },
+    "bleachedEventDetails": "Darling Downs RoboCup Team Support Workshop 2026\n\nBring your students and their robots to Biddeston State Primary School for a full day of hands-on RoboCup Junior preparation and support.\n\nThis workshop is designed to help teams get ready for the 2026 RoboCup Junior competition season. Students will have the opportunity to work on their chosen challenge, including Rescue Line, Rescue Maze and OnStage while receiving personalised feedback and guidance from experienced RoboCup mentors.\n\nThroughout the day, students will be able to:\n\n* Test and develop their robots\n* Ask questions and receive expert advice\n* Debug code and troubleshoot hardware issues\n* Refine robot designs and improve performance\n* Gain ideas and strategies to strengthen their competition entry\n\nWhether students are just getting started or are fine-tuning an advanced robot, this workshop provides valuable support to help teams build confidence, overcome obstacles and maximise their chances of success during the competition season.\n\nStudents should bring their robots, laptops, chargers and any spare parts they may need for the day.",
+    "effectiveBannerImageURL": "https://rcjaregistration-prod-public.s3.amazonaws.com/EventBannerImages/EventBannerImage_725bf2de-3cf6-4cef-bfa9-f2550e3bfd21.jpeg",
+    "registrationURL": "https://enter.robocupjunior.org.au/events/365",
+    "availabledivisions": [
+      {
+        "name": "Novice OnStage Performance",
+        "description": "",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      },
+      {
+        "name": "Open OnStage Performance",
+        "description": "",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      },
+      {
+        "name": "Primary Rescue Line",
+        "description": "",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      },
+      {
+        "name": "Riley Rover Rescue Line",
+        "description": "",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      },
+      {
+        "name": "Secondary Rescue Line",
+        "description": "",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      },
+      {
+        "name": "Mighty Maisy Rescue Maze",
+        "description": "",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      },
+      {
+        "name": "OnStage",
+        "description": "Workshop Division",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      },
+      {
+        "name": "Rescue Line",
+        "description": "Workshop Division",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      },
+      {
+        "name": "Rescue Maze",
+        "description": "Workshop Division",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      }
+    ]
+  },
+  {
+    "id": 320,
+    "state": 7,
+    "name": "North Brisbane Sumo Competition",
+    "eventType": "competition",
+    "cmsEventId": "26_QL_NORTH_156",
+    "startDate": "2026-06-13",
+    "endDate": "2026-06-13",
+    "registrationsOpenDate": "2026-04-12",
+    "registrationsCloseDate": "2026-06-05",
+    "maxMembersPerTeam": 4,
+    "event_maxRegistrationsPerSchool": null,
+    "event_maxRegistrationsForEvent": 40,
+    "entryFeeIncludesGST": true,
+    "competition_defaultEntryFee": 50,
+    "paymentDueDate": null,
+    "competition_billingType": "team",
+    "competition_specialRateNumber": null,
+    "competition_specialRateFee": null,
+    "workshopTeacherEntryFee": 50,
+    "workshopStudentEntryFee": 50,
+    "eventSurchargeAmount": 0,
+    "surchargeName": "Surcharge",
+    "surchargeEventDescription": "",
+    "directEnquiriesTo": {
+      "fullName": "RoboCupJunior Queensland",
+      "email": "qld@robocupjunior.org.au"
+    },
+    "venue": {
+      "name": "Bray Park State High School",
+      "address": "27-37 Lavarack Rd, Bray Park QLD 4500"
+    },
+    "bleachedEventDetails": "Brisbane North Sumo Competition. Registration now open, and closes 5th June.\nLink to info pack: https://canva.link/yz40j3oy0r6lgkx\n\nPlease note that Sumo competitor numbers may need to be capped. To help ensure as many people as possible can participate, competitors in the SEQLD region are asked to register for only one of the following Brisbane-area sumo competitions:\n\nBrisbane North (13th June)\nBrisbane Regionals (23rd–24th May)\nOrmiston Sumo Regionals (19th July)\nIn the event of over-registration, preference will be given to those registering for only one competition, followed by order of registration.\n\nAdditional Note: Technical posters will not be required for this competition. However, mentors are encouraged to reflect with students on 1 or 2 things they like about their robots, and 1 thing they would like to improve and how the students would go about improving.",
+    "effectiveBannerImageURL": "https://rcjaregistration-prod-public.s3.amazonaws.com/DefaultEventImages/DefaultEventImage_76077de9-10a1-4526-9d7a-5b2e76e6454b.jpg",
+    "registrationURL": "https://enter.robocupjunior.org.au/events/320",
+    "availabledivisions": [
+      {
+        "name": "Sumo - Intermediate",
+        "description": "Sumo (Intermediate)",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      },
+      {
+        "name": "Sumo - Open",
+        "description": "",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      },
+      {
+        "name": "Sumo - Primary",
+        "description": "",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      },
+      {
+        "name": "Sumo - Secondary",
+        "description": "",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      }
+    ]
+  },
+  {
+    "id": 363,
+    "state": 7,
+    "name": "Gladstone Regional",
+    "eventType": "competition",
+    "cmsEventId": null,
+    "startDate": "2026-06-15",
+    "endDate": "2026-06-15",
+    "registrationsOpenDate": "2026-04-01",
+    "registrationsCloseDate": "2026-06-09",
+    "maxMembersPerTeam": 4,
+    "event_maxRegistrationsPerSchool": null,
+    "event_maxRegistrationsForEvent": null,
+    "entryFeeIncludesGST": true,
+    "competition_defaultEntryFee": 0,
+    "paymentDueDate": null,
+    "competition_billingType": "team",
+    "competition_specialRateNumber": null,
+    "competition_specialRateFee": null,
+    "workshopTeacherEntryFee": 0,
+    "workshopStudentEntryFee": 0,
+    "eventSurchargeAmount": 0,
+    "surchargeName": "Surcharge",
+    "surchargeEventDescription": "",
+    "directEnquiriesTo": {
+      "fullName": "tracey iki",
+      "email": "tracey_iki@rok.catholic.edu.au"
+    },
+    "venue": {
+      "name": "Chanel College",
+      "address": "11 Paterson Street, Gladstone QLD 4680"
+    },
+    "bleachedEventDetails": "Unfortunately this event is postponed due to unforeseen circumstances. A Term 3 date will be announced later. We apologize for the situation. Please contact qld@robocupjunior.org.au for more information",
+    "effectiveBannerImageURL": "https://rcjaregistration-prod-public.s3.amazonaws.com/DefaultEventImages/DefaultEventImage_76077de9-10a1-4526-9d7a-5b2e76e6454b.jpg",
+    "registrationURL": "https://enter.robocupjunior.org.au/events/363",
+    "availabledivisions": [
+      {
+        "name": "Primary OnStage (FNQ)",
+        "description": "",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      },
+      {
+        "name": "Secondary OnStage",
+        "description": "",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      },
+      {
+        "name": "Primary Rescue Line",
+        "description": "",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      },
+      {
+        "name": "Secondary Rescue Line",
+        "description": "",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      }
+    ]
+  },
+  {
+    "id": 322,
+    "state": 7,
+    "name": "FNQ Regional Competition",
+    "eventType": "competition",
+    "cmsEventId": "26_QL_FNQRX_A06",
+    "startDate": "2026-06-20",
+    "endDate": "2026-06-20",
+    "registrationsOpenDate": "2026-05-11",
+    "registrationsCloseDate": "2026-06-17",
+    "maxMembersPerTeam": 4,
+    "event_maxRegistrationsPerSchool": null,
+    "event_maxRegistrationsForEvent": null,
+    "entryFeeIncludesGST": true,
+    "competition_defaultEntryFee": 30,
+    "paymentDueDate": "2026-06-26",
+    "competition_billingType": "team",
+    "competition_specialRateNumber": null,
+    "competition_specialRateFee": null,
+    "workshopTeacherEntryFee": 50,
+    "workshopStudentEntryFee": 50,
+    "eventSurchargeAmount": 0,
+    "surchargeName": "Surcharge",
+    "surchargeEventDescription": "",
+    "directEnquiriesTo": {
+      "fullName": "Liam McComb",
+      "email": "lrmcc0@eq.edu.au"
+    },
+    "venue": {
+      "name": "Redlynch State College",
+      "address": "Jungara Road, Redlynch, QLD 4870"
+    },
+    "bleachedEventDetails": "The Far North Queensland RoboCup Regionals will be held at Redlynch State College, Multi‑Purpose Hall, on Saturday 20 June, from 9:00am to approximately 1:00pm. Registrations open at 8:30am.\n\n• Open to school and community‑based teams\n• Teachers and mentors are encouraged to volunteer—no judging experience required. Parents and community volunteers are welcome. Please contact lrmcc0@eq.edu.au if available.\n•Families, schools and clubs are responsible for supervising their own teams with appropriate ratios.\n• Sausage Sizzle available on the day.\n• Technical posters are required ONLY for OnStage divisions. They are not required for Rescue, Soccer, or Sumo divisions.\n\nDetailed competition information will be emailed to mentors prior to the event.",
+    "effectiveBannerImageURL": "https://rcjaregistration-prod-public.s3.amazonaws.com/VenueImages/VenueImage_0e1fa152-4a67-4eab-9646-adabd595ebbe.jpeg",
+    "registrationURL": "https://enter.robocupjunior.org.au/events/322",
+    "availabledivisions": [
+      {
+        "name": "Primary OnStage (FNQ)",
+        "description": "",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      },
+      {
+        "name": "Secondary OnStage",
+        "description": "",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      },
+      {
+        "name": "Primary Rescue Line",
+        "description": "",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      },
+      {
+        "name": "Secondary Rescue Line",
+        "description": "",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      },
+      {
+        "name": "Simple Simon Soccer",
+        "description": "",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      },
+      {
+        "name": "Sumo - Primary",
+        "description": "",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      },
+      {
+        "name": "Sumo - Secondary",
+        "description": "",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      }
+    ]
+  },
+  {
+    "id": 323,
+    "state": 7,
+    "name": "Redlands Sumo Regional",
+    "eventType": "competition",
+    "cmsEventId": "26_QL_REDLA_365",
+    "startDate": "2026-07-19",
+    "endDate": "2026-07-19",
+    "registrationsOpenDate": "2026-04-12",
+    "registrationsCloseDate": "2026-07-12",
+    "maxMembersPerTeam": 4,
+    "event_maxRegistrationsPerSchool": null,
+    "event_maxRegistrationsForEvent": 50,
+    "entryFeeIncludesGST": true,
+    "competition_defaultEntryFee": 50,
+    "paymentDueDate": null,
+    "competition_billingType": "team",
+    "competition_specialRateNumber": null,
+    "competition_specialRateFee": null,
+    "workshopTeacherEntryFee": 50,
+    "workshopStudentEntryFee": 50,
+    "eventSurchargeAmount": 0,
+    "surchargeName": "Surcharge",
+    "surchargeEventDescription": "",
+    "directEnquiriesTo": {
+      "fullName": "RoboCupJunior Queensland",
+      "email": "qld@robocupjunior.org.au"
+    },
+    "venue": {
+      "name": "Ormiston College",
+      "address": "97 Dundas St W, Ormiston QLD 4160"
+    },
+    "bleachedEventDetails": "Redlands Regional Sumo returns for the 2nd year!\nRegistrations now open, close 12th July.\n\nMore details to follow.\n\nPlease note that competitor numbers may need to be capped. To help ensure as many people as possible can participate, competitors in the SEQLD region are asked to register for only one of the following Brisbane-area sumo competitions:\n\nBrisbane North (13th June)\n\nBrisbane Regionals (23rd–24th May)\n\nOrmiston Sumo Regionals (19th July)\n\nIn the event of over-registration, preference will be given to those registering for only one competition, followed by order of registration.\nAdditional Note: Technical posters will not be required for this competition. However, mentors are encouraged to reflect with students on 1 or 2 things they like about their robots, and 1 thing they would like to improve and how the students would go about improving.",
+    "effectiveBannerImageURL": "https://rcjaregistration-prod-public.s3.amazonaws.com/DefaultEventImages/DefaultEventImage_76077de9-10a1-4526-9d7a-5b2e76e6454b.jpg",
+    "registrationURL": "https://enter.robocupjunior.org.au/events/323",
+    "availabledivisions": [
+      {
+        "name": "Sumo - Intermediate",
+        "description": "Sumo (Intermediate)",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      },
+      {
+        "name": "Sumo - Open",
+        "description": "",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      },
+      {
+        "name": "Sumo - Primary",
+        "description": "",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      },
+      {
+        "name": "Sumo - Secondary",
+        "description": "",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      }
+    ]
+  },
+  {
+    "id": 362,
+    "state": 7,
+    "name": "Central Queensland Junior Robotics Competition",
+    "eventType": "competition",
+    "cmsEventId": "26_QL_CENTR_0FD",
+    "startDate": "2026-07-31",
+    "endDate": "2026-07-31",
+    "registrationsOpenDate": "2026-05-07",
+    "registrationsCloseDate": "2026-07-24",
+    "maxMembersPerTeam": 6,
+    "event_maxRegistrationsPerSchool": null,
+    "event_maxRegistrationsForEvent": null,
+    "entryFeeIncludesGST": true,
+    "competition_defaultEntryFee": 0,
+    "paymentDueDate": null,
+    "competition_billingType": "team",
+    "competition_specialRateNumber": null,
+    "competition_specialRateFee": null,
+    "workshopTeacherEntryFee": 0,
+    "workshopStudentEntryFee": 0,
+    "eventSurchargeAmount": 0,
+    "surchargeName": "Surcharge",
+    "surchargeEventDescription": "",
+    "directEnquiriesTo": {
+      "fullName": "Jason Bell",
+      "email": "j.bell@cqu.edu.au"
+    },
+    "venue": {
+      "name": "CQUniversity Sport Centre",
+      "address": "CQUniversity Community Sports Centre \r\nYaamba Rd, North Rockhampton"
+    },
+    "bleachedEventDetails": "More information can be found at the event's website - https://cqjrc.cqu.edu.au/",
+    "effectiveBannerImageURL": "https://rcjaregistration-prod-public.s3.amazonaws.com/VenueImages/VenueImage_ae460ba2-0147-4f77-aa20-e2571ccf6772.jpg",
+    "registrationURL": "https://enter.robocupjunior.org.au/events/362",
+    "availabledivisions": [
+      {
+        "name": "Secondary OnStage",
+        "description": "",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      },
+      {
+        "name": "Open Rescue Line",
+        "description": "",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      },
+      {
+        "name": "Primary Rescue Line",
+        "description": "",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      },
+      {
+        "name": "Secondary Rescue Line",
+        "description": "",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      },
+      {
+        "name": "Lightweight Soccer",
+        "description": "",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      },
+      {
+        "name": "OnStage",
+        "description": "Workshop Division",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      }
+    ]
+  },
+  {
+    "id": 309,
+    "state": 7,
+    "name": "Darling Downs Regional",
+    "eventType": "competition",
+    "cmsEventId": "26_QL_DARLI_BC8",
+    "startDate": "2026-08-01",
+    "endDate": "2026-08-01",
+    "registrationsOpenDate": "2026-02-02",
+    "registrationsCloseDate": "2026-07-31",
+    "maxMembersPerTeam": 4,
+    "event_maxRegistrationsPerSchool": null,
+    "event_maxRegistrationsForEvent": null,
+    "entryFeeIncludesGST": true,
+    "competition_defaultEntryFee": 50,
+    "paymentDueDate": "2026-08-01",
+    "competition_billingType": "team",
+    "competition_specialRateNumber": null,
+    "competition_specialRateFee": null,
+    "workshopTeacherEntryFee": 50,
+    "workshopStudentEntryFee": 50,
+    "eventSurchargeAmount": 0,
+    "surchargeName": "Surcharge",
+    "surchargeEventDescription": "",
+    "directEnquiriesTo": {
+      "fullName": "Jay Wright",
+      "email": "jwrig318@eq.edu.au"
+    },
+    "venue": {
+      "name": "Fairholme College",
+      "address": "40 Wirra Wirra Street\r\nToowoomba QLD 4350"
+    },
+    "bleachedEventDetails": "The RoboCup Junior season is back and shaping up to be one of the most exciting yet. The Darling Downs Regional Competition brings together students, teachers and mentors from across the region to celebrate creativity, problem-solving and real-world robotics.\n\nTeams will design, build and program autonomous robots to tackle authentic challenges across the RoboCup Junior categories. From precise line following and rescue scenarios to complex maze navigation and creative performance, students will be pushed to think critically, collaborate and innovate under competition conditions.\n\nThis event is about more than trophies. It is a supportive, high-energy environment where students share ideas, learn from one another and gain confidence in engineering, coding and systems thinking. Whether teams are brand new or highly experienced, RoboCup Junior provides meaningful challenge and genuine excitement for all participants.\n\nThe 2026 Darling Downs Regional Competition will be hosted at Fairholme College, providing a fantastic venue for teams, judges and supporters to come together for a full day of robotics action.\n\nWe look forward to welcoming returning teams and new schools to another great RoboCup Junior season. Start building, start testing and get ready to compete.",
+    "effectiveBannerImageURL": "https://rcjaregistration-prod-public.s3.amazonaws.com/EventBannerImages/EventBannerImage_1ceeab38-7855-4c1c-ab7b-94f5af7bf088.jpeg",
+    "registrationURL": "https://enter.robocupjunior.org.au/events/309",
+    "availabledivisions": [
+      {
+        "name": "Novice OnStage Performance",
+        "description": "",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      },
+      {
+        "name": "Secondary OnStage",
+        "description": "",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      },
+      {
+        "name": "Primary Rescue Line",
+        "description": "",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      },
+      {
+        "name": "Riley Rover Rescue Line",
+        "description": "",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      },
+      {
+        "name": "Secondary Rescue Line",
+        "description": "",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      },
+      {
+        "name": "Intermediate Rescue Maze",
+        "description": "",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      },
+      {
+        "name": "Mighty Maisy Rescue Maze",
+        "description": "",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      },
+      {
+        "name": "Lightweight Soccer",
+        "description": "",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      },
+      {
+        "name": "Simple Simon Soccer",
+        "description": "",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      },
+      {
+        "name": "Standard Soccer",
+        "description": "",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      }
+    ]
+  },
+  {
+    "id": 366,
+    "state": 7,
+    "name": "Mackay Junior Robotics Competition",
+    "eventType": "competition",
+    "cmsEventId": "26_QL_MACKA_115",
+    "startDate": "2026-08-12",
+    "endDate": "2026-08-12",
+    "registrationsOpenDate": "2026-06-19",
+    "registrationsCloseDate": "2026-08-07",
+    "maxMembersPerTeam": 4,
+    "event_maxRegistrationsPerSchool": null,
+    "event_maxRegistrationsForEvent": null,
+    "entryFeeIncludesGST": true,
+    "competition_defaultEntryFee": 15,
+    "paymentDueDate": "2026-08-07",
+    "competition_billingType": "team",
+    "competition_specialRateNumber": null,
+    "competition_specialRateFee": null,
+    "workshopTeacherEntryFee": 15,
+    "workshopStudentEntryFee": 15,
+    "eventSurchargeAmount": 0,
+    "surchargeName": "Surcharge",
+    "surchargeEventDescription": "",
+    "directEnquiriesTo": {
+      "fullName": "Sandra Bayliss",
+      "email": "sandra_bayliss@rok.catholic.edu.au"
+    },
+    "venue": {
+      "name": "The Big Shed",
+      "address": "Mackay Showgrounds\r\n24 Milton Street\r\nMackay"
+    },
+    "bleachedEventDetails": "The MJRC is open to primary and secondary students in Years 5-12 within the Mackay region and surrounding areas.    \n\nYou can find more information, including specific rule differences, at www.whitsundaystemchallenge.com.au",
+    "effectiveBannerImageURL": "https://rcjaregistration-prod-public.s3.amazonaws.com/EventBannerImages/EventBannerImage_8a9c3e29-c226-4389-8dd6-186fd162cfeb.jpg",
+    "registrationURL": "https://enter.robocupjunior.org.au/events/366",
+    "availabledivisions": [
+      {
+        "name": "Novice OnStage Performance",
+        "description": "",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "team",
+        "division_entryFee": 15
+      },
+      {
+        "name": "Junior Rescue Line (Mackay)",
+        "description": "Grades 5-8 Rescue Line Division for Mackay Events",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "team",
+        "division_entryFee": 15
+      },
+      {
+        "name": "Senior Rescue Line (Mackay)",
+        "description": "Grades 9-12 Rescue Line Division for Mackay Events",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "team",
+        "division_entryFee": 15
+      },
+      {
+        "name": "Junior Soccer (Mackay)",
+        "description": "Grades 5-8 Soccer Division for Mackay Events",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "team",
+        "division_entryFee": 15
+      },
+      {
+        "name": "Senior Soccer (Mackay)",
+        "description": "Grades 9-12 Soccer Division for Mackay Events",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "team",
+        "division_entryFee": 15
+      }
+    ]
+  },
+  {
+    "id": 316,
+    "state": 7,
+    "name": "State Championships",
+    "eventType": "competition",
+    "cmsEventId": "26_QL_STATE_1B6",
+    "startDate": "2026-08-14",
+    "endDate": "2026-08-16",
+    "registrationsOpenDate": "2026-02-22",
+    "registrationsCloseDate": "2026-08-07",
+    "maxMembersPerTeam": 4,
+    "event_maxRegistrationsPerSchool": null,
+    "event_maxRegistrationsForEvent": 260,
+    "entryFeeIncludesGST": true,
+    "competition_defaultEntryFee": 125,
+    "paymentDueDate": "2026-08-07",
+    "competition_billingType": "team",
+    "competition_specialRateNumber": null,
+    "competition_specialRateFee": null,
+    "workshopTeacherEntryFee": 135,
+    "workshopStudentEntryFee": 135,
+    "eventSurchargeAmount": 0,
+    "surchargeName": "Surcharge",
+    "surchargeEventDescription": "",
+    "directEnquiriesTo": {
+      "fullName": "RoboCupJunior Queensland",
+      "email": "qld@robocupjunior.org.au"
+    },
+    "venue": {
+      "name": "University of Queensland",
+      "address": "Building 11A, ModWest"
+    },
+    "bleachedEventDetails": "<b>2026 RoboCupJunior Queensland State Championship</b>\n\nJoin us for RoboCupJunior Queensland’s <b>25th Anniversary Event</b> at The University of Queensland on Saturday 15 and Sunday 16 August 2026.\n\n<b>Event Information Pack</b>\n\nAll teams, mentors and families should read the Information Pack before attending. It includes important information about the competition, venue, arrival arrangements, schedules and event requirements.\n\n<a href=\"https://canva.link/7jnnzuj7mr4dp2h\"><b>View the 2026 State Championship Information Pack</b></a>\n\n---\n\n<b>Saturday 15 August</b>\n\n<b>Leagues Competing</b>\n\n• OnStage Novice\n• Rescue Line Secondary\n• Rescue Maze Intermediate\n• Rescue Maze Open\n• Sumo — all divisions\n\n<b>Additional Competitions</b>\n\n• Soccer — all divisions\n• Simple Simon — Saturday only\n\n<b>Saturday Venues</b>\n\nMost competitions will be held at:\n\nBuilding 11A, ModWest\nThe University of Queensland\n\nSumo will be held separately at:\n\nAdvanced Engineering Building, Building 49\nThe University of Queensland\n\nThe Sumo competition will finish by 2:30 pm so that students and teams can walk to ModWest for the Awards Presentation. ModWest is approximately an eight-minute walk from the Sumo venue.\n\n<a href=\"https://maps.app.goo.gl/533X37KKEtmKKPGg7\"><b>View the Sumo venue in Google Maps</b></a>\n\n---\n\n<b>Sunday 16 August</b>\n\n<b>Leagues Competing</b>\n\n• OnStage Open\n• Rescue Line Riley Rover\n• Rescue Line Primary\n• Rescue Line Open\n• Rescue Maze Mighty Maisy\n\n<b>Additional Competitions</b>\n\n• Soccer Standard\n• Soccer Lightweight\n• Soccer Open\n\nAll Sunday competitions will be held at Building 11A, ModWest.\n\n---\n\n<b>Important Competition Notes</b>\n\nSoccer runs across both competition days.\n\nSimple Simon will be held on Saturday only.\n\n<b>Media Release Deeds</b>\n\nAll participants must have a Media Release Deed signed by their parent or guardian.\n\nMentors must upload completed Media Release Deeds through the registration portal, together with all other required materials, including annotated code, OnStage music and any applicable league documentation.\n\n<a href=\"https://tinyurl.com/RCJA2026mediarelease\"><b>Download the Media Release Deed</b></a>\n\n<b>Risk Assessment</b>\n\nRoboCupJunior Queensland has risk assessments in place for all Queensland events.\n\nThe Risk Assessment for the 2026 Queensland State Championship is available below.\n\n<a href=\"https://tinyurl.com/RCJQ2026StateRA\"><b>View the Queensland State Championship Risk Assessment</b></a>\n\n<b>Volunteer With Us</b>\n\nRoboCupJunior events are made possible by our volunteers. Many roles do not require robotics experience, and training and support will be provided.\n\n<a href=\"https://forms.cloud.microsoft/r/iNbFrwtTnh\"><b>Register as a Volunteer</b></a>\n\n<b>Main Venue</b>\n\nPlease note that ModWest is a new venue for the event in 2026.\n\nBuilding 11A, ModWest\nThe University of Queensland\n\n<a href=\"https://maps.uq.edu.au/\"><b>View the UQ Campus Map</b></a>",
+    "effectiveBannerImageURL": "https://rcjaregistration-prod-public.s3.amazonaws.com/VenueImages/VenueImage_f0456b83-5c38-459c-aec7-19ba720df31f.jpg",
+    "registrationURL": "https://enter.robocupjunior.org.au/events/316",
+    "availabledivisions": [
+      {
+        "name": "Novice OnStage Performance",
+        "description": "",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      },
+      {
+        "name": "Open OnStage Performance",
+        "description": "",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      },
+      {
+        "name": "Open Rescue Line",
+        "description": "",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      },
+      {
+        "name": "Primary Rescue Line",
+        "description": "",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      },
+      {
+        "name": "Riley Rover Rescue Line",
+        "description": "",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      },
+      {
+        "name": "Secondary Rescue Line",
+        "description": "",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      },
+      {
+        "name": "Intermediate Rescue Maze",
+        "description": "",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      },
+      {
+        "name": "Mighty Maisy Rescue Maze",
+        "description": "",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      },
+      {
+        "name": "Open Rescue Maze",
+        "description": "",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      },
+      {
+        "name": "Lightweight Soccer",
+        "description": "",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      },
+      {
+        "name": "Open Soccer",
+        "description": "",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      },
+      {
+        "name": "Simple Simon Soccer",
+        "description": "",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      },
+      {
+        "name": "Standard Soccer",
+        "description": "",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      },
+      {
+        "name": "Sumo - Intermediate",
+        "description": "Sumo (Intermediate)",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      },
+      {
+        "name": "Sumo - Open",
+        "description": "",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      },
+      {
+        "name": "Sumo - Primary",
+        "description": "",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      },
+      {
+        "name": "Sumo - Secondary",
+        "description": "",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      }
+    ]
+  },
+  {
+    "id": 332,
+    "state": 7,
+    "name": "Bundaberg Regional Sumo Championship",
+    "eventType": "competition",
+    "cmsEventId": "26_QL_BUNDA_5D2",
+    "startDate": "2026-11-04",
+    "endDate": "2026-11-04",
+    "registrationsOpenDate": "2026-10-06",
+    "registrationsCloseDate": "2026-10-28",
+    "maxMembersPerTeam": 2,
+    "event_maxRegistrationsPerSchool": null,
+    "event_maxRegistrationsForEvent": 100,
+    "entryFeeIncludesGST": true,
+    "competition_defaultEntryFee": 10,
+    "paymentDueDate": "2026-11-04",
+    "competition_billingType": "team",
+    "competition_specialRateNumber": null,
+    "competition_specialRateFee": null,
+    "workshopTeacherEntryFee": 10,
+    "workshopStudentEntryFee": 10,
+    "eventSurchargeAmount": 0,
+    "surchargeName": "Surcharge",
+    "surchargeEventDescription": "",
+    "directEnquiriesTo": {
+      "fullName": "Matthew Hollett",
+      "email": "mholl172@eq.edu.au"
+    },
+    "venue": {
+      "name": "Kepnock State High School",
+      "address": "43 Kepnock Rd, Bundaberg Central QLD 4670"
+    },
+    "bleachedEventDetails": "• Location: RJ Young Hall, Kepnock State High School (43 Kepnock Rd, Bundaberg, QLD 4670)\n• Time: 9am - 2:30pm\n• Registration is open to school and community-based teams.\n• Staff and students are asked to bring their own lunch. We will update mentors if coffee/food vans become available.\n• Each registered school/club must provide an official on the day. Non-teaching volunteers welcome e.g. parents, past RoboCup siblings etc. with all necessary training being provided on the day. Additional volunteers welcome.\n• Individual schools/clubs are responsible for the supervision of their own teams. Please ensure an appropriate ratio between students/adults is adhered to.\nCompetition Handbook will be emailed out to mentors with more information including event specific rule changes.",
+    "effectiveBannerImageURL": "https://rcjaregistration-prod-public.s3.amazonaws.com/DefaultEventImages/DefaultEventImage_76077de9-10a1-4526-9d7a-5b2e76e6454b.jpg",
+    "registrationURL": "https://enter.robocupjunior.org.au/events/332",
+    "availabledivisions": [
+      {
+        "name": "Sumo - Intermediate",
+        "description": "Sumo (Intermediate)",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      },
+      {
+        "name": "Sumo - Primary",
+        "description": "",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      },
+      {
+        "name": "Sumo - Secondary",
+        "description": "",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      }
+    ]
+  }
+]

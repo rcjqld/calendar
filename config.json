@@ -1,0 +1,216 @@
+{
+  "QLD": {
+    "enabled": true,
+    "title": "RCJQ – Queensland Regional Calendar",
+    "stateCode": "QLD",
+    "subRegions": {
+      "seq": {
+        "title": "South East QLD",
+        "keywords": ["brisbane", "gold coast", "sunshine coast", "ipswich", "logan", "redland", "moreton", "moreton bay", "caboolture", "redcliffe", "springfield", "ormiston", "cleveland", "wynnum", "capalaba", "beenleigh", "loganholme", "springwood", "mount gravatt", "chermside", "indooroopilly", "toowong", "st lucia", "kelvin grove", "southport", "surfers paradise", "robina", "nerang", "coomera", "helensvale", "burleigh", "coolangatta", "maroochydore", "mooloolaba", "caloundra", "nambour", "noosa", "buderim", "kawana", "beaudesert", "jimboomba", "north lakes", "strathpine", "deception bay", "victoria point", "cleveland", "carindale", "sunnybank", "browns plains", "forest lake", "wacol", "acacia ridge"]
+      },
+      "wide-bay": {
+        "title": "Wide Bay & Central QLD",
+        "keywords": ["bundaberg", "hervey bay", "maryborough", "gympie", "fraser coast", "gladstone", "rockhampton", "mackay", "yeppoon", "emerald", "biloela", "childers", "central queensland", "capella", "moranbah", "sarina", "airlie", "whitsunday", "proserpine", "kingaroy", "south burnett", "nanango", "murgon", "gracemere", "blackwater", "moura", "bargara", "tin can bay", "maryborough west"]
+      },
+      "downs": {
+        "title": "Darling Downs & South West",
+        "keywords": ["toowoomba", "warwick", "dalby", "stanthorpe", "chinchilla", "goondiwindi", "highfields", "oakey", "pittsworth", "miles", "charleville", "darling downs", "dd", "western downs", "gatton", "laidley", "crows nest", "millmerran", "texas", "inglewood", "st george", "cunnamulla", "kingaroy east", "lockyer"]
+      },
+      "fnq": {
+        "title": "North & Far North QLD",
+        "keywords": ["cairns", "townsville", "mount isa", "charters towers", "innisfail", "atherton", "mareeba", "port douglas", "ingham", "ayr", "tully", "weipa", "cape york", "far north", "fnq", "cooktown", "gordonvale", "edmonton", "smithfield", "kirwan", "thuringowa", "aitkenvale", "bowen", "burdekin", "tablelands", "cassowary"]
+      },
+      "nationals": {
+        "title": "Nationals",
+        "keywords": ["national", "nationals"]
+      }
+    },
+    "defaultRegion": "seq",
+    "regionOrder": ["seq", "wide-bay", "downs", "fnq", "nationals"]
+  },
+  "VIC": {
+    "enabled": true,
+    "title": "RCJV – Victoria Regional Calendar",
+    "stateCode": "VIC",
+    "subRegions": {
+      "metro": {
+        "title": "Melbourne Metro",
+        "keywords": ["melbourne", "carlton", "fitzroy", "collingwood", "richmond", "footscray", "st kilda", "brunswick", "preston", "box hill", "ringwood", "dandenong", "frankston", "werribee", "sunbury", "craigieburn", "epping", "broadmeadows", "essendon", "moonee ponds", "camberwell", "hawthorn", "glen waverley", "clayton", "cheltenham", "berwick", "pakenham", "cranbourne", "point cook", "melton", "sunshine", "hoppers crossing", "wyndham", "caroline springs", "tarneit", "mentone", "prahran", "south yarra", "doncaster", "templestowe", "croydon", "lilydale", "mooroolbark", "knox", "wantirna", "rowville", "narre warren", "keysborough", "springvale", "noble park", "williamstown", "altona", "laverton", "deer park", "st albans", "keilor", "tullamarine", "greensborough", "eltham", "bundoora", "reservoir", "thomastown", "mill park", "south morang", "mernda", "kew", "balwyn", "blackburn", "nunawading", "vermont", "chadstone", "oakleigh", "carnegie", "caulfield", "elsternwick", "sandringham", "hampton", "outer eastern"]
+      },
+      "regional": {
+        "title": "Regional Victoria",
+        "keywords": ["geelong", "ballarat", "bendigo", "shepparton", "warrnambool", "gippsland", "traralgon", "sale", "bairnsdale", "wodonga", "wangaratta", "mildura", "swan hill", "echuca", "horsham", "hamilton", "colac", "portland", "ararat", "castlemaine", "wonthaggi", "leongatha", "morwell", "moe", "latrobe", "benalla", "seymour", "kyneton", "gisborne", "bacchus marsh", "torquay", "ocean grove", "lorne", "mansfield", "bright", "cobram", "wallan", "kilmore", "drouin", "warragul", "yarrawonga", "kerang", "stawell", "camperdown", "mornington", "rosebud", "dromana", "sorrento", "hastings", "phillip island", "cowes", "healesville", "marysville", "alexandra", "corryong", "maryborough"]
+      },
+      "nationals": {
+        "title": "Nationals",
+        "keywords": ["national", "nationals"]
+      }
+    },
+    "defaultRegion": "metro",
+    "regionOrder": ["metro", "regional", "nationals"]
+  },
+  "NSW": {
+    "enabled": true,
+    "title": "RCJNSW – New South Wales Regional Calendar",
+    "stateCode": "NSW",
+    "subRegions": {
+      "sydney": {
+        "title": "Greater Sydney",
+        "keywords": ["sydney", "parramatta", "penrith", "liverpool", "campbelltown", "blacktown", "north sydney", "chatswood", "hornsby", "manly", "bondi", "randwick", "sutherland", "cronulla", "hurstville", "bankstown", "fairfield", "castle hill", "baulkham hills", "ryde", "epping", "willoughby", "mosman", "lane cove", "strathfield", "burwood", "ashfield", "marrickville", "rockdale", "kogarah", "camden", "wollondilly", "hawkesbury", "windsor", "richmond", "blue mountains", "katoomba", "springwood", "macquarie park", "homebush", "olympic park", "auburn", "lidcombe", "granville", "merrylands", "seven hills", "mount druitt", "st marys", "quakers hill", "rouse hill", "kellyville", "dural", "cherrybrook", "pennant hills", "narellan", "oran park", "leppington", "miranda", "caringbah", "menai", "revesby", "cabramatta", "eastwood", "gladesville", "drummoyne", "leichhardt", "glebe", "newtown", "redfern", "mascot", "botany", "maroubra", "coogee", "kensington"]
+      },
+      "hunter": {
+        "title": "Hunter, Newcastle & Central Coast",
+        "keywords": ["newcastle", "hunter", "maitland", "port stephens", "cessnock", "lake macquarie", "cardiff", "charlestown", "raymond terrace", "singleton", "muswellbrook", "nelson bay", "central coast", "gosford", "wyong", "tuggerah", "the entrance", "terrigal", "erina", "morisset", "toronto", "belmont", "warners bay", "kurri kurri", "scone", "medowie", "salamander", "hamilton", "wallsend", "mayfield", "kotara", "merewether"]
+      },
+      "illawarra": {
+        "title": "Illawarra & South Coast",
+        "keywords": ["wollongong", "illawarra", "shellharbour", "nowra", "south coast", "kiama", "dapto", "warrawong", "ulladulla", "batemans bay", "bega", "eden", "shoalhaven", "berry", "gerringong", "thirroul", "bulli", "corrimal", "figtree", "unanderra", "albion park", "jamberoo", "milton", "narooma", "moruya", "merimbula", "tathra", "bombala", "huskisson"]
+      },
+      "regional": {
+        "title": "Regional NSW",
+        "keywords": ["dubbo", "wagga", "wagga wagga", "albury", "tamworth", "orange", "bathurst", "central west", "griffith", "broken hill", "lismore", "ballina", "byron bay", "tweed heads", "coffs harbour", "port macquarie", "grafton", "armidale", "taree", "forster", "goulburn", "queanbeyan", "cooma", "mudgee", "parkes", "forbes", "cowra", "young", "deniliquin", "leeton", "moree", "inverell", "gunnedah", "narrabri", "bourke", "cobar", "northern rivers", "new england", "riverina", "snowy", "hay", "temora", "gundagai", "tumut", "yass", "crookwell", "oberon", "lithgow", "gulgong", "narromine", "coonabarabran", "nyngan", "walgett", "kempsey", "wauchope", "macksville", "nambucca", "bellingen", "dorrigo", "woolgoolga", "sawtell", "casino", "kyogle", "mullumbimby", "murwillumbah", "kingscliff", "corowa", "cootamundra", "junee", "tumbarumba", "merriwa"]
+      },
+      "nationals": {
+        "title": "Nationals",
+        "keywords": ["national", "nationals"]
+      }
+    },
+    "defaultRegion": "sydney",
+    "regionOrder": ["sydney", "hunter", "illawarra", "regional", "nationals"]
+  },
+  "SA": {
+    "enabled": true,
+    "title": "RCJSA – South Australia Regional Calendar",
+    "stateCode": "SA",
+    "subRegions": {
+      "metro": {
+        "title": "Adelaide Metro",
+        "keywords": ["adelaide", "port adelaide", "glenelg", "modbury", "salisbury", "elizabeth", "marion", "mitcham", "unley", "norwood", "prospect", "burnside", "campbelltown", "tea tree gully", "golden grove", "noarlunga", "morphett vale", "aldinga", "seaford", "west lakes", "henley beach", "semaphore", "brighton", "blackwood", "mawson lakes", "para hills", "ingle farm", "gawler", "munno para", "smithfield", "playford", "onkaparinga", "hallett cove", "christies beach", "reynella", "woodcroft", "flagstaff hill", "aberfoyle", "happy valley", "mount barker", "stirling", "aldgate", "hahndorf", "littlehampton", "nairne", "port noarlunga", "seacliff", "plympton", "richmond", "findon", "woodville", "fulham", "grange", "largs", "enfield", "kilburn", "croydon", "hindmarsh", "thebarton", "torrensville", "mile end", "magill", "athelstone", "paradise", "newton", "payneham", "walkerville", "medindie", "goolwa", "strathalbyn", "angaston", "lyndoch", "lobethal"]
+      },
+      "regional": {
+        "title": "Regional SA",
+        "keywords": ["mount gambier", "port lincoln", "whyalla", "murray bridge", "port augusta", "port pirie", "victor harbor", "berri", "renmark", "loxton", "naracoorte", "bordertown", "kadina", "wallaroo", "clare", "barossa", "nuriootpa", "tanunda", "roxby downs", "coober pedy", "ceduna", "kangaroo island", "riverland", "limestone coast", "yorke peninsula", "eyre peninsula", "fleurieu", "mannum", "tailem bend", "meningie", "millicent", "keith", "waikerie", "burra", "peterborough", "jamestown", "crystal brook", "kimba", "cleve", "cummins", "tumby bay", "streaky bay", "wudinna", "moonta", "maitland", "yorketown", "mount pleasant"]
+      },
+      "nationals": {
+        "title": "Nationals",
+        "keywords": ["national", "nationals"]
+      }
+    },
+    "defaultRegion": "metro",
+    "regionOrder": ["metro", "regional", "nationals"]
+  },
+  "WA": {
+    "enabled": true,
+    "title": "RCJWA – Western Australia Regional Calendar",
+    "stateCode": "WA",
+    "subRegions": {
+      "perth": {
+        "title": "Perth Metro",
+        "keywords": ["perth", "fremantle", "joondalup", "rockingham", "mandurah", "armadale", "midland", "cannington", "morley", "scarborough", "cottesloe", "subiaco", "claremont", "wanneroo", "ellenbrook", "baldivis", "cockburn", "melville", "canning", "gosnells", "kalamunda", "bayswater", "bassendean", "belmont", "victoria park", "kwinana", "success", "butler", "yanchep", "mundaring", "swan valley", "guildford", "forrestfield", "high wycombe", "maddington", "thornlie", "willetton", "riverton", "leeming", "booragoon", "applecross", "bicton", "palmyra", "mosman park", "nedlands", "floreat", "wembley", "osborne park", "mirrabooka", "balga", "girrawheen", "kingsley", "duncraig", "hillarys", "sorrento", "karrinyup", "dianella", "inglewood", "maylands", "ascot", "redcliffe", "cloverdale", "rivervale", "carlisle", "east perth", "northbridge", "leederville", "west perth", "secret harbour", "warnbro", "waikiki"]
+      },
+      "regional": {
+        "title": "Regional WA",
+        "keywords": ["bunbury", "albany", "geraldton", "kalgoorlie", "broome", "busselton", "margaret river", "esperance", "karratha", "port hedland", "carnarvon", "kununurra", "northam", "narrogin", "manjimup", "collie", "katanning", "merredin", "newman", "exmouth", "denmark", "dunsborough", "augusta", "pilbara", "kimberley", "goldfields", "wheatbelt", "harvey", "australind", "capel", "donnybrook", "bridgetown", "nannup", "pemberton", "walpole", "mount barker", "york", "beverley", "brookton", "corrigin", "wagin", "boddington", "pinjarra", "waroona", "dwellingup", "jurien bay", "moora", "dalwallinu", "wongan hills", "dongara", "kalbarri", "denham", "wickham", "roebourne", "tom price", "paraburdoo", "derby", "halls creek", "leonora", "coolgardie", "kambalda", "norseman", "ravensthorpe", "hopetoun", "meekatharra", "leinster"]
+      },
+      "nationals": {
+        "title": "Nationals",
+        "keywords": ["national", "nationals"]
+      }
+    },
+    "defaultRegion": "perth",
+    "regionOrder": ["perth", "regional", "nationals"]
+  },
+  "TAS": {
+    "enabled": true,
+    "title": "RCJTAS – Tasmania Regional Calendar",
+    "stateCode": "TAS",
+    "subRegions": {
+      "south": {
+        "title": "Hobart & Southern TAS",
+        "keywords": ["hobart", "kingston", "glenorchy", "clarence", "sorell", "huon", "kingborough", "brighton", "new norfolk", "derwent", "sandy bay", "moonah", "claremont", "rosny", "bellerive", "lindisfarne", "howrah", "blackmans bay", "margate", "cygnet", "huonville", "geeveston", "dodges ferry", "richmond", "campania", "bridgewater", "gagebrook", "oatlands", "bothwell", "new town", "north hobart", "battery point", "taroona", "lenah valley", "west hobart", "south hobart"]
+      },
+      "north": {
+        "title": "Launceston & Northern TAS",
+        "keywords": ["launceston", "devonport", "burnie", "ulverstone", "wynyard", "deloraine", "george town", "scottsdale", "somerset", "latrobe", "smithton", "queenstown", "bicheno", "st helens", "kings meadows", "mowbray", "riverside", "prospect", "newnham", "invermay", "longford", "evandale", "perth", "westbury", "exeter", "beaconsfield", "beauty point", "sheffield", "railton", "penguin", "strahan", "rosebery", "zeehan", "stanley", "scamander", "st marys", "campbell town", "ross", "bridport", "ringarooma", "north west coast"]
+      },
+      "nationals": {
+        "title": "Nationals",
+        "keywords": ["national", "nationals"]
+      }
+    },
+    "defaultRegion": "south",
+    "regionOrder": ["south", "north", "nationals"]
+  },
+  "ACT": {
+    "enabled": true,
+    "title": "RCJACT – Australian Capital Territory Regional Calendar",
+    "stateCode": "ACT",
+    "subRegions": {
+      "canberra": {
+        "title": "Canberra & ACT",
+        "keywords": ["canberra", "act", "belconnen", "tuggeranong", "woden", "gungahlin", "civic", "dickson", "braddon", "kingston", "manuka", "fyshwick", "weston creek", "molonglo", "kambah", "phillip", "bruce", "mitchell", "kenny", "franklin", "harrison", "casey", "gordon", "conder", "banks", "calwell", "chisholm", "wanniassa", "kaleen", "evatt", "hawker", "holt", "macgregor", "dunlop", "charnwood", "florey", "latham", "page", "scullin", "weetangera", "aranda", "cook", "macquarie", "lyneham", "turner", "ainslie", "watson", "hackett", "downer", "deakin", "barton", "narrabundah", "red hill", "yarralumla", "curtin", "hughes", "garran", "lyons", "chifley", "pearce", "torrens", "farrer", "isaacs", "mawson", "greenway", "bonython", "monash", "oxley", "amaroo", "ngunnawal", "palmerston", "nicholls", "crace", "bonner", "forde", "moncrieff", "throsby", "denman prospect", "wright", "coombs", "weston", "queanbeyan"]
+      },
+      "nationals": {
+        "title": "Nationals",
+        "keywords": ["national", "nationals"]
+      }
+    },
+    "defaultRegion": "canberra",
+    "regionOrder": ["canberra", "nationals"]
+  },
+  "NT": {
+    "enabled": true,
+    "title": "RCJNT – Northern Territory Regional Calendar",
+    "stateCode": "NT",
+    "subRegions": {
+      "darwin": {
+        "title": "Darwin & NT",
+        "keywords": ["darwin", "palmerston", "alice springs", "katherine", "northern territory", "casuarina", "nightcliff", "tennant creek", "nhulunbuy", "jabiru", "humpty doo", "howard springs", "berrimah", "marrara", "sanderson", "karama", "malak", "leanyer", "wanguri", "tiwi", "brinkin", "coconut grove", "ludmilla", "parap", "fannie bay", "larrakeyah", "stuart park", "bakewell", "gray", "moulden", "driver", "farrar", "zuccoli", "johnston", "durack", "gunn", "bees creek", "batchelor", "adelaide river", "pine creek", "mataranka", "borroloola", "yulara"]
+      },
+      "nationals": {
+        "title": "Nationals",
+        "keywords": ["national", "nationals"]
+      }
+    },
+    "defaultRegion": "darwin",
+    "regionOrder": ["darwin", "nationals"]
+  },
+  "NZ": {
+    "enabled": true,
+    "title": "RCJNZ – New Zealand Regional Calendar",
+    "stateCode": "NZ",
+    "subRegions": {
+      "north-island": {
+        "title": "North Island",
+        "keywords": ["auckland", "wellington", "hamilton", "tauranga", "palmerston north", "napier", "hastings", "rotorua", "whangarei", "new plymouth", "whanganui", "gisborne", "taupo", "whakatane", "levin", "masterton", "kapiti", "porirua", "lower hutt", "upper hutt", "manukau", "north shore", "waitakere", "papakura", "pukekohe", "cambridge", "te awamutu", "matamata", "morrinsville", "thames", "coromandel", "paeroa", "te puke", "mount maunganui", "opotiki", "kawerau", "wairoa", "dannevirke", "feilding", "foxton", "otaki", "paraparaumu", "hutt"]
+      },
+      "south-island": {
+        "title": "South Island",
+        "keywords": ["christchurch", "dunedin", "invercargill", "nelson", "queenstown", "timaru", "blenheim", "greymouth", "ashburton", "oamaru", "gore", "wanaka", "cromwell", "rangiora", "rolleston", "motueka", "westport", "hokitika", "kaikoura", "hanmer", "geraldine", "temuka", "waimate", "balclutha", "alexandra", "arrowtown", "te anau", "richmond", "stoke", "brightwater", "mosgiel"]
+      },
+      "nationals": {
+        "title": "Nationals",
+        "keywords": ["national", "nationals"]
+      }
+    },
+    "defaultRegion": "north-island",
+    "regionOrder": ["north-island", "south-island", "nationals"]
+  },
+  "NAT": {
+    "enabled": true,
+    "title": "RCJA – National Events Calendar",
+    "stateCode": "NAT",
+    "subRegions": {
+      "competitions": {
+        "title": "Competitions",
+        "keywords": ["championship", "national", "nationals", "spike prime challenge", "australia season launch"]
+      },
+      "workshops": {
+        "title": "Workshops",
+        "keywords": ["workshop"]
+      }
+    },
+    "defaultRegion": "competitions",
+    "regionOrder": ["competitions", "workshops"]
+  }
+}

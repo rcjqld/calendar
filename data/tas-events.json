@@ -1,0 +1,39 @@
+[
+  {
+    "id": 359,
+    "state": 9,
+    "name": "RoboCup Information Session for Teachers",
+    "eventType": "workshop",
+    "cmsEventId": null,
+    "startDate": "2026-04-15",
+    "endDate": "2026-04-15",
+    "registrationsOpenDate": "2026-04-09",
+    "registrationsCloseDate": "2026-04-14",
+    "maxMembersPerTeam": 0,
+    "event_maxRegistrationsPerSchool": null,
+    "event_maxRegistrationsForEvent": 0,
+    "entryFeeIncludesGST": true,
+    "competition_defaultEntryFee": null,
+    "paymentDueDate": null,
+    "competition_billingType": "team",
+    "competition_specialRateNumber": null,
+    "competition_specialRateFee": null,
+    "workshopTeacherEntryFee": 0,
+    "workshopStudentEntryFee": 0,
+    "eventSurchargeAmount": 0,
+    "surchargeName": "Surcharge",
+    "surchargeEventDescription": "",
+    "directEnquiriesTo": {
+      "fullName": "Karen Binns",
+      "email": "karen.binns@robocupjunior.org.au"
+    },
+    "venue": {
+      "name": "Virtual Event",
+      "address": ""
+    },
+    "bleachedEventDetails": "Register for this event at <a href=\"https://www.tasite.tas.edu.au/event-6644328\">https://www.tasite.tas.edu.au/event-6644328</a>\n\nIn Tasmania, RoboCup Junior has a long and strong history - a highpoint being holding the National Championships in 2012. With the current changes at LEGO Education (winding up of EV3 and Spike PRIME), and importantly the impact of this on FIRST LEGO League, RoboCup junior could well be placed to fill the gap for the many schools that will have trouble competing in FLL in the years to come, have SPIKE and EV3 kits at schools, or are looking for a change of competition and focus anyway.\n\nPresented by Karen Binns, President of RoboCup Australia and David Ebert, RoboCup Victoria, this hands-on information session will provide details on what the competition offers and how to get a team together.",
+    "effectiveBannerImageURL": "https://rcjaregistration-prod-public.s3.amazonaws.com/EventBannerImages/EventBannerImage_f453a0c6-8309-4641-9fe9-c2828714db4f.png",
+    "registrationURL": "https://enter.robocupjunior.org.au/events/359",
+    "availabledivisions": []
+  }
+]

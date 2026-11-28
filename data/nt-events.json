@@ -1,0 +1,126 @@
+[
+  {
+    "id": 344,
+    "state": 3,
+    "name": "Robocup Junior - Teacher Workshop",
+    "eventType": "workshop",
+    "cmsEventId": null,
+    "startDate": "2026-03-30",
+    "endDate": "2026-03-30",
+    "registrationsOpenDate": "2026-03-16",
+    "registrationsCloseDate": "2026-03-27",
+    "maxMembersPerTeam": 0,
+    "event_maxRegistrationsPerSchool": null,
+    "event_maxRegistrationsForEvent": null,
+    "entryFeeIncludesGST": true,
+    "competition_defaultEntryFee": null,
+    "paymentDueDate": null,
+    "competition_billingType": "team",
+    "competition_specialRateNumber": null,
+    "competition_specialRateFee": null,
+    "workshopTeacherEntryFee": 0,
+    "workshopStudentEntryFee": 0,
+    "eventSurchargeAmount": 0,
+    "surchargeName": "Surcharge",
+    "surchargeEventDescription": "",
+    "directEnquiriesTo": {
+      "fullName": "Jacqueline Leah",
+      "email": "jacqueline.leah@robocupjunior.org.au"
+    },
+    "venue": {
+      "name": "Girraween Primary School",
+      "address": "25 Carruth Avenue Girraween NT 0836"
+    },
+    "bleachedEventDetails": "This event is designed to support teachers who wish to participate in the Robocup Junior competition, held in Darwin on 11th June. Teachers are encouraged to come along with the robots and coding that their students have completed (so far) or with no robots and no coding. All are welcome. Come along to learn about the competitions being offered. Learn to code EV3 and Spike Prime robots and support each other to have a go. Students are also welcome and may be able to participate in a friendly competition to test their coding.\nPlease indicate if you are attending as a teacher only, or if you wish to bring students.",
+    "effectiveBannerImageURL": "https://rcjaregistration-prod-public.s3.amazonaws.com/VenueImages/VenueImage_c7a5081a-d9e6-4448-a25d-1fd2521c9dd4.jpg",
+    "registrationURL": "https://enter.robocupjunior.org.au/events/344",
+    "availabledivisions": [
+      {
+        "name": "Novice OnStage Performance",
+        "description": "",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      },
+      {
+        "name": "Riley Rover Rescue Line",
+        "description": "",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      },
+      {
+        "name": "Simple Simon Soccer",
+        "description": "",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      }
+    ]
+  },
+  {
+    "id": 341,
+    "state": 3,
+    "name": "Darwin Robocup Junior Competition",
+    "eventType": "competition",
+    "cmsEventId": null,
+    "startDate": "2026-06-11",
+    "endDate": "2026-06-11",
+    "registrationsOpenDate": "2026-03-16",
+    "registrationsCloseDate": "2026-06-06",
+    "maxMembersPerTeam": 4,
+    "event_maxRegistrationsPerSchool": null,
+    "event_maxRegistrationsForEvent": null,
+    "entryFeeIncludesGST": true,
+    "competition_defaultEntryFee": 5,
+    "paymentDueDate": "2026-06-06",
+    "competition_billingType": "student",
+    "competition_specialRateNumber": null,
+    "competition_specialRateFee": null,
+    "workshopTeacherEntryFee": 5,
+    "workshopStudentEntryFee": 5,
+    "eventSurchargeAmount": 0,
+    "surchargeName": "Surcharge",
+    "surchargeEventDescription": "",
+    "directEnquiriesTo": {
+      "fullName": "Jacqueline Leah",
+      "email": "jacqueline.leah@robocupjunior.org.au"
+    },
+    "venue": {
+      "name": "Girraween Primary School",
+      "address": "25 Carruth Avenue Girraween NT 0836"
+    },
+    "bleachedEventDetails": "Novice Onstage, Simple Simon Soccer and Riley Rover Rescue will be offered.",
+    "effectiveBannerImageURL": "https://rcjaregistration-prod-public.s3.amazonaws.com/VenueImages/VenueImage_c7a5081a-d9e6-4448-a25d-1fd2521c9dd4.jpg",
+    "registrationURL": "https://enter.robocupjunior.org.au/events/341",
+    "availabledivisions": [
+      {
+        "name": "Novice OnStage Performance",
+        "description": "",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      },
+      {
+        "name": "Riley Rover Rescue Line",
+        "description": "",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      },
+      {
+        "name": "Simple Simon Soccer",
+        "description": "",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      }
+    ]
+  }
+]
